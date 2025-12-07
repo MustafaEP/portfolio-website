@@ -547,14 +547,6 @@ function App() {
               >
                 LinkedIn
               </a>
-              <a
-                href="https://mustafaerhanportakal.com"
-                target="_blank"
-                rel="noreferrer"
-                className="px-8 py-4 rounded-full border-2 border-slate-700 hover:border-sky-500 text-slate-300 hover:text-sky-400 font-medium hover:scale-105 transition-all duration-200"
-              >
-                Portfolio Domain
-              </a>
             </div>
           </div>
         </section>
