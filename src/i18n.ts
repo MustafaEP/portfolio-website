@@ -148,6 +148,14 @@ export const translations: Record<Lang, Translations> = {
           tech: "Python, JavaScript, React, Node.js, Flask, HTML, CSS, Git, Jupyter Notebook",
           link: "https://github.com/MustafaEP/IBM-Full-Stack-Software-Engineering",
         },
+        {
+          name: "AI Emotion Project",
+          role: "Full-Stack Developer",
+          description:
+            "Metinlerin duygusal tonunu analiz eden AI tabanlı full-stack uygulama. Python Gradio ile Hugging Face'de AI servisi, .NET 8.0 backend API ve React frontend içerir. Kullanıcı bazlı analiz geçmişi ve RESTful API desteği sunar.",
+          tech: "Python, Gradio, Transformers, Hugging Face, .NET 8.0, Entity Framework Core, SQLite, React, Vite, React Native",
+          link: "https://github.com/MustafaEP/AiEmotionProject",
+        },
       ],
     },
     skills: {
@@ -323,6 +331,14 @@ export const translations: Record<Lang, Translations> = {
             "Repository archiving course notes, laboratory projects, and technical conversations with AI assistants for the IBM Full Stack Software Developer Professional Certificate program. Includes modules on Git, HTML/CSS/JavaScript, React, Node.js, Python, and Flask.",
           tech: "Python, JavaScript, React, Node.js, Flask, HTML, CSS, Git, Jupyter Notebook",
           link: "https://github.com/MustafaEP/IBM-Full-Stack-Software-Engineering",
+        },
+        {
+          name: "AI Emotion Project",
+          role: "Full-Stack Developer",
+          description:
+            "AI-based full-stack application that analyzes the emotional tone of texts. Features Python Gradio AI service on Hugging Face, .NET 8.0 backend API, and React frontend. Includes user-based analysis history and RESTful API support.",
+          tech: "Python, Gradio, Transformers, Hugging Face, .NET 8.0, Entity Framework Core, SQLite, React, Vite, React Native",
+          link: "https://github.com/MustafaEP/AiEmotionProject",
         },
       ],
     },
