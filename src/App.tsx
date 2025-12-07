@@ -4,6 +4,7 @@ import { type Lang, translations } from "./i18n";
 function App() {
   const [lang, setLang] = useState<Lang>("tr");
   const [scrolled, setScrolled] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const saved = sessionStorage.getItem("lang") as Lang | null;
@@ -18,12 +19,46 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    // Sayfa yükleme animasyonu
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const handleChangeLang = (value: Lang) => {
     setLang(value);
     sessionStorage.setItem("lang", value);
   };
 
   const t = translations[lang];
+
+  // Loading Screen
+  if (isLoading) {
+    return (
+      <div className="fixed inset-0 z-[9999] bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 flex items-center justify-center">
+        <div className="relative">
+          {/* Animated gradient circle */}
+          <div className="w-20 h-20 rounded-full bg-gradient-to-r from-sky-500 to-blue-600 animate-pulse blur-xl opacity-50" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="relative">
+              {/* Spinning ring */}
+              <div className="w-16 h-16 border-4 border-slate-800 rounded-full" />
+              <div className="absolute top-0 left-0 w-16 h-16 border-4 border-transparent border-t-sky-500 border-r-blue-500 rounded-full animate-spin" />
+              {/* Center logo/text */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-xl font-bold bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
+                  MEP
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100">

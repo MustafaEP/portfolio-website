@@ -1,10 +1,301 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Mustafa Erhan Portakal - Junior Full-Stack Developer. React, Node.js ve ASP.NET Core ile production-ready web uygulamaları geliştiriyorum. Spotify ve Gemini AI API'lerini entegre eden Moodify-AI projesi sahibi. IBM Full Stack Software Developer Professional Certificate programını tamamlıyorum." />
+    <meta name="keywords" content="Mustafa Erhan Portakal, Junior Full-Stack Developer, React Developer, TypeScript, Node.js, Express, ASP.NET Core, .NET 8, Entity Framework, MongoDB, MS SQL, PostgreSQL, REST API, JWT, OAuth2, Full-Stack Geliştirici, Web Developer, Frontend Developer, Backend Developer, Moodify-AI, Spotify API, Gemini AI, IBM Certificate, Software Engineer, BRM Software, Bursa, İstanbul, Turkey, Python, Flask, Django, Docker, Kubernetes, Git, GitHub" />
+    <meta name="author" content="Mustafa Erhan Portakal" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta property="og:site_name" content="Mustafa Erhan Portakal Portfolio" />
+    <meta property="og:title" content="Mustafa Erhan Portakal - Junior Full-Stack Developer" />
+    <meta property="og:description" content="React, Node.js ve ASP.NET Core ile production-ready web uygulamaları geliştiren Junior Full-Stack Developer. Spotify ve Gemini AI API'lerini entegre eden Moodify-AI projesi sahibi. BRM Software'de ASP.NET Developer stajyeri." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mustafaerhanportakal.netlify.app" />
+    <meta property="og:image" content="https://mustafaerhanportakal.netlify.app/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mustafa Erhan Portakal - Junior Full-Stack Developer Portfolio" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@MustafaEP" />
+    <meta name="twitter:creator" content="@MustafaEP" />
+    <meta name="twitter:title" content="Mustafa Erhan Portakal - Junior Full-Stack Developer" />
+    <meta name="twitter:description" content="React, Node.js ve ASP.NET Core ile production-ready web uygulamaları geliştiren Junior Full-Stack Developer. Moodify-AI projesi sahibi." />
+    <meta name="twitter:image" content="https://mustafaerhanportakal.netlify.app/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Mustafa Erhan Portakal Portfolio" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#0ea5e9" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mustafaerhanportakal.netlify.app" />
+    
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="tr" href="https://mustafaerhanportakal.netlify.app" />
+    <link rel="alternate" hreflang="x-default" href="https://mustafaerhanportakal.netlify.app" />
+    
+    <!-- Title -->
+    <title>Mustafa Erhan Portakal | Junior Full-Stack Developer - React, Node.js, ASP.NET Core</title>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mustafa Erhan Portakal",
+      "alternateName": "MEP",
+      "jobTitle": "Junior Full-Stack Developer",
+      "description": "Full-Stack Developer with hands-on experience building production-ready applications using React, Node.js, TypeScript, and ASP.NET Core. Developed Moodify-AI, a music recommendation platform integrating Spotify and Gemini AI APIs.",
+      "url": "https://mustafaerhanportakal.netlify.app",
+      "image": "https://mustafaerhanportakal.netlify.app/og-image.jpg",
+      "sameAs": [
+        "https://github.com/MustafaEP",
+        "https://linkedin.com/in/mustafa-erhan-portakal-2142101ba",
+        "https://www.coursera.org/user/c0e3f35ac58bb1e0ee2ffde27d1dc7d4"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Istanbul",
+        "addressRegion": "Istanbul",
+        "addressCountry": "TR"
+      },
+      "email": "portakalm11@gmail.com",
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "IBM",
+          "url": "https://www.ibm.com"
+        }
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Introduction to Software Engineering",
+          "description": "IBM Professional Certificate",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "IBM"
+          },
+          "url": "https://www.coursera.org/account/accomplishments/verify/2D7DCC192333E111BF43AE7703724E49",
+          "dateCreated": "2025-10-19",
+          "educationalLevel": "Professional"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Introduction to Cloud Computing",
+          "description": "IBM Professional Certificate",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "IBM"
+          },
+          "url": "https://www.coursera.org/account/accomplishments/verify/6XGRYV9R3N6M",
+          "dateCreated": "2025-11-01",
+          "educationalLevel": "Professional"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Developing Front-End Apps with React",
+          "description": "IBM Professional Certificate",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "IBM"
+          },
+          "url": "https://www.coursera.org/account/accomplishments/verify/VXKF0QT8UUKU",
+          "dateCreated": "2025-11-15",
+          "educationalLevel": "Professional"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Developing Back-End Apps with Node.js and Express",
+          "description": "IBM Professional Certificate",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "IBM"
+          },
+          "url": "https://www.coursera.org/account/accomplishments/verify/NJT5L5CJFI1S",
+          "dateCreated": "2025-11-19",
+          "educationalLevel": "Professional"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Python for Data Science, AI & Development",
+          "description": "IBM Professional Certificate",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "IBM"
+          },
+          "url": "https://www.coursera.org/account/accomplishments/verify/A4F3BYT1VDOW",
+          "dateCreated": "2025-11-26",
+          "educationalLevel": "Professional"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Developing AI Applications with Python and Flask",
+          "description": "IBM Professional Certificate",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "IBM"
+          },
+          "url": "https://www.coursera.org/account/accomplishments/verify/WUV2ABTV36NQ",
+          "dateCreated": "2025-11-29",
+          "educationalLevel": "Professional"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Django Application Development with SQL and Databases",
+          "description": "IBM Professional Certificate",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "IBM"
+          },
+          "url": "https://www.coursera.org/account/accomplishments/verify/1SHVXOJ4X0ZG",
+          "dateCreated": "2025-12-03",
+          "educationalLevel": "Professional"
+        }
+      ],
+      "knowsAbout": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "Express.js",
+        "ASP.NET Core",
+        ".NET 8",
+        "Entity Framework",
+        "MongoDB",
+        "MS SQL",
+        "PostgreSQL",
+        "REST APIs",
+        "RESTful API Design",
+        "JWT Authentication",
+        "OAuth2",
+        "Git",
+        "GitHub",
+        "Docker",
+        "Kubernetes",
+        "Full-Stack Development",
+        "Backend Development",
+        "Frontend Development",
+        "API Development",
+        "Database Design",
+        "Python",
+        "Flask",
+        "Django",
+        "AI Applications",
+        "Machine Learning",
+        "Data Science",
+        "Cloud Computing",
+        "Agile Methodologies",
+        "Clean Architecture",
+        "Software Engineering",
+        "Web Development",
+        "MVC Architecture",
+        "Spotify API Integration",
+        "Gemini AI Integration",
+        "Sentiment Analysis"
+      ],
+      "knowsLanguage": [
+        {
+          "@type": "Language",
+          "name": "Turkish",
+          "alternateName": "tr"
+        },
+        {
+          "@type": "Language",
+          "name": "English",
+          "alternateName": "en"
+        }
+      ],
+      "workExample": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Moodify-AI",
+          "description": "A sentiment-analysis-driven music recommendation platform integrating Spotify and Gemini AI APIs. Full-stack application built with React, Node.js, Express, and MongoDB.",
+          "applicationCategory": "WebApplication",
+          "operatingSystem": "Web Browser",
+          "url": "https://github.com/MustafaEP/Moodify-AI",
+          "programmingLanguage": [
+            "JavaScript",
+            "TypeScript"
+          ],
+          "keywords": "React, Node.js, Express, MongoDB, Spotify API, Gemini AI, Sentiment Analysis, Music Recommendation, Full-Stack",
+          "author": {
+            "@type": "Person",
+            "name": "Mustafa Erhan Portakal"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Soccer App",
+          "description": "ASP.NET Core API for managing teams, players, and match records with clean architecture, validation, and comprehensive error handling.",
+          "applicationCategory": "WebApplication",
+          "operatingSystem": "Web Server",
+          "url": "https://github.com/MustafaEP/SoccerApp",
+          "programmingLanguage": [
+            "C#"
+          ],
+          "keywords": "ASP.NET Core, Entity Framework, MS SQL, REST API, Clean Architecture, Backend Development",
+          "author": {
+            "@type": "Person",
+            "name": "Mustafa Erhan Portakal"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "TUBITAK Rover - Anti-Skid System",
+          "description": "Autonomous rover stability and anti-skid system developed as part of a TUBITAK scientific research project. Embedded systems programming with Arduino and Raspberry Pi.",
+          "applicationCategory": "EmbeddedSystem",
+          "url": "https://github.com/Rover-Anti-Skid-System/Rover-Wheel-Design-with-Anti-Skid-System",
+          "programmingLanguage": [
+            "C++",
+            "Python"
+          ],
+          "keywords": "Arduino, C++, Raspberry Pi, Python, GPS, Bluetooth, Embedded Systems, IoT, Autonomous Systems",
+          "author": {
+            "@type": "Person",
+            "name": "Mustafa Erhan Portakal"
+          }
+        }
+      ],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "BRM SOFTWARE",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bursa",
+            "addressCountry": "TR"
+          }
+        }
+      ],
+      "memberOf": {
+        "@type": "Organization",
+        "name": "IBM Full Stack Software Developer Professional Certificate Program"
+      }
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
