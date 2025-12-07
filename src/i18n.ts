@@ -140,6 +140,14 @@ export const translations: Record<Lang, Translations> = {
           link:
             "https://github.com/Rover-Anti-Skid-System/Rover-Wheel-Design-with-Anti-Skid-System",
         },
+        {
+          name: "IBM Full Stack Software Engineering",
+          role: "Full-Stack Developer",
+          description:
+            "IBM Full Stack Software Developer Professional Certificate programı için ders notları, laboratuvar projeleri ve AI asistanı ile teknik sohbetlerin arşivlendiği repository. Git, HTML/CSS/JavaScript, React, Node.js, Python ve Flask içeren modüller.",
+          tech: "Python, JavaScript, React, Node.js, Flask, HTML, CSS, Git, Jupyter Notebook",
+          link: "https://github.com/MustafaEP/IBM-Full-Stack-Software-Engineering",
+        },
       ],
     },
     skills: {
@@ -307,6 +315,14 @@ export const translations: Record<Lang, Translations> = {
           tech: "Arduino, C++, Raspberry Pi, Python, GPS, Bluetooth",
           link:
             "https://github.com/Rover-Anti-Skid-System/Rover-Wheel-Design-with-Anti-Skid-System",
+        },
+        {
+          name: "IBM Full Stack Software Engineering",
+          role: "Full-Stack Developer",
+          description:
+            "Repository archiving course notes, laboratory projects, and technical conversations with AI assistants for the IBM Full Stack Software Developer Professional Certificate program. Includes modules on Git, HTML/CSS/JavaScript, React, Node.js, Python, and Flask.",
+          tech: "Python, JavaScript, React, Node.js, Flask, HTML, CSS, Git, Jupyter Notebook",
+          link: "https://github.com/MustafaEP/IBM-Full-Stack-Software-Engineering",
         },
       ],
     },
