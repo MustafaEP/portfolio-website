@@ -235,6 +235,20 @@ export const translations: Record<Lang, Translations> = {
           link:
             "https://www.coursera.org/account/accomplishments/verify/1SHVXOJ4X0ZG",
         },
+        {
+          name: "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+          provider: "IBM / Coursera",
+          date: "15/12/2025",
+          link:
+            "https://www.coursera.org/account/accomplishments/verify/6S74R0Z0N6F1",
+        },
+        {
+          name: "Application Development using Microservices and Serverless",
+          provider: "IBM / Coursera",
+          date: "24/12/2025",
+          link:
+            "https://www.coursera.org/account/accomplishments/verify/R0WQAGRJJBZG",
+        },
       ],
     },
     contact: {
@@ -418,6 +432,20 @@ export const translations: Record<Lang, Translations> = {
           date: "2025-12-03",
           link:
             "https://www.coursera.org/account/accomplishments/verify/1SHVXOJ4X0ZG",
+        },
+        {
+          name: "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+          provider: "IBM / Coursera",
+          date: "2025-12-15",
+          link:
+            "https://www.coursera.org/account/accomplishments/verify/6S74R0Z0N6F1",
+        },
+        {
+          name: "Application Development using Microservices and Serverless",
+          provider: "IBM / Coursera",
+          date: "2025-12-24",
+          link:
+            "https://www.coursera.org/account/accomplishments/verify/R0WQAGRJJBZG",
         },
       ],
     },
