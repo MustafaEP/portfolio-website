@@ -7,6 +7,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [coursesExpanded, setCoursesExpanded] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   // Theme detection and initialization
@@ -301,7 +302,7 @@ function App() {
                 </svg>
               </a>
               <a
-                href="/Mustafa-Erhan-Portakal-CV.pdf"
+                href={lang === "tr" ? "/Mustafa-Erhan-Portakal-CV-TR.pdf" : "/Mustafa-Erhan-Portakal-CV.pdf"}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 border-2 border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 rounded-lg font-medium hover:border-neutral-400 dark:hover:border-neutral-600 hover:bg-neutral-50 dark:hover:bg-dark-surface transition-all duration-200 active:scale-98"
@@ -596,39 +597,86 @@ function App() {
             {t.certifications.title}
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {t.certifications.items.map((cert, idx) => (
-              <article
-                key={`${cert.link}-${idx}`}
-                className="group bg-white dark:bg-dark-surface rounded-lg border border-neutral-200 dark:border-neutral-800 p-6 hover:shadow-md dark:hover:shadow-none transition-all duration-300 hover:-translate-y-0.5"
-              >
-                <div className="flex items-start justify-between gap-3 mb-4">
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-1 transition-colors">
-                      {cert.name}
-                    </h3>
-                    <p className="text-sm text-neutral-600 dark:text-neutral-400 transition-colors">{cert.provider}</p>
-                  </div>
-                  <span className="text-xs text-neutral-500 dark:text-neutral-400 px-3 py-1 rounded-full bg-neutral-100 dark:bg-neutral-900 whitespace-nowrap transition-colors">
-                    {cert.date}
-                  </span>
+          <div className="max-w-4xl">
+            <article className="bg-white dark:bg-dark-surface rounded-lg border border-neutral-200 dark:border-neutral-800 p-8 hover:shadow-lg dark:hover:shadow-none transition-all duration-300">
+              <div className="flex items-start justify-between gap-4 mb-6">
+                <div className="flex-1">
+                  <h3 className="text-2xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2 transition-colors">
+                    {t.certifications.professionalCertificate.name}
+                  </h3>
+                  <p className="text-base text-neutral-600 dark:text-neutral-400 mb-4 transition-colors">
+                    {t.certifications.professionalCertificate.provider}
+                  </p>
+                  <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed mb-6 transition-colors">
+                    {t.certifications.professionalCertificate.description}
+                  </p>
                 </div>
+                <span className="text-sm text-neutral-500 dark:text-neutral-400 px-4 py-2 rounded-full bg-neutral-100 dark:bg-neutral-900 whitespace-nowrap transition-colors">
+                  {t.certifications.professionalCertificate.date}
+                </span>
+              </div>
+
+              <div className="flex items-center gap-4 mb-6 pb-6 border-b border-neutral-100 dark:border-neutral-800">
                 <a
-                  href={cert.link}
+                  href={t.certifications.professionalCertificate.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors group"
-                  aria-label={`View ${cert.name} certificate`}
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 rounded-lg font-medium hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-all duration-200 shadow-sm hover:shadow-md active:scale-98"
+                  aria-label={`View ${t.certifications.professionalCertificate.name} certificate`}
                 >
                   <span>
                     {lang === "tr" ? "Sertifikayı görüntüle" : "View certificate"}
                   </span>
-                  <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
                 </a>
-              </article>
-            ))}
+              </div>
+
+              <div>
+                <button
+                  onClick={() => setCoursesExpanded(!coursesExpanded)}
+                  className="flex items-center justify-between w-full text-left text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors group"
+                  aria-expanded={coursesExpanded}
+                  aria-label={coursesExpanded ? (lang === "tr" ? "Dersleri gizle" : "Hide courses") : (lang === "tr" ? "Dersleri göster" : "Show courses")}
+                >
+                  <span>{t.certifications.professionalCertificate.includedCoursesLabel}</span>
+                  <svg
+                    className={`w-5 h-5 transition-transform duration-200 ${coursesExpanded ? "rotate-180" : ""}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                {coursesExpanded && (
+                  <div className="mt-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400 mb-4 transition-colors">
+                      {lang === "tr"
+                        ? "Bu dersler Professional Certificate programının bir parçasıdır ve ayrı ayrı tamamlanmıştır."
+                        : "These courses are part of the Professional Certificate program and were completed individually."}
+                    </p>
+                    <ul className="space-y-2">
+                      {t.certifications.professionalCertificate.includedCourses.map((course, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-neutral-400 dark:bg-neutral-500 flex-shrink-0" />
+                          <a
+                            href={course.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors flex-1"
+                          >
+                            {course.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </article>
           </div>
         </section>
 

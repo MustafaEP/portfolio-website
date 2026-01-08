@@ -61,12 +61,18 @@ type Translations = {
   };
   certifications: {
     title: string;
-    items: {
+    professionalCertificate: {
       name: string;
       provider: string;
       date: string;
       link: string;
-    }[];
+      description: string;
+      includedCoursesLabel: string;
+      includedCourses: {
+        name: string;
+        link: string;
+      }[];
+    };
   };
   contact: {
     title: string;
@@ -98,9 +104,9 @@ export const translations: Record<Lang, Translations> = {
       title: "Hakkımda",
       text:
         "React, Node.js, TypeScript ve ASP.NET Core kullanarak üretime hazır uygulamalar geliştirme konusunda deneyimli Full-Stack Developer. " +
+        "IBM Full Stack Software Developer Professional Certificate sahibiyim. " +
         "Spotify ve Gemini AI API'lerini entegre eden Moodify-AI adlı full-stack müzik öneri platformunu geliştirdim. " +
         "Staj süresince iyi yapılandırılmış RESTful API'ler geliştirdim ve sorunsuz entegrasyon sağlamak için frontend ekipleriyle yakın işbirliği yaptım. " +
-        "Şu anda TypeScript uzmanlığımı geliştiriyorum ve uluslararası işbirliği için İngilizce yeterliliğimi aktif olarak geliştirirken IBM Full Stack Software Developer Professional Certificate programını tamamlıyorum. " +
         "Ölçeklenebilir SaaS ürünleri ve AI destekli çözümlere odaklanan full-stack veya backend rollerinde ilgileniyorum.",
     },
     experience: {
@@ -205,7 +211,7 @@ export const translations: Record<Lang, Translations> = {
         {
           name: "IBM Full Stack Software Engineering",
           role: "Full-Stack Developer",
-          tagline: "IBM sertifika programı için kapsamlı proje arşivi",
+          tagline: "IBM Full Stack Software Developer Professional Certificate capstone project repository",
           technologies: "Python, JavaScript, React, Node.js, Flask, HTML, CSS, Git",
           link: "https://github.com/MustafaEP/IBM-Full-Stack-Software-Engineering",
         },
@@ -254,85 +260,77 @@ export const translations: Record<Lang, Translations> = {
     },
     certifications: {
       title: "Sertifikalar",
-      items: [
-        {
-          name: "Introduction to Software Engineering",
-          provider: "IBM / Coursera",
-          date: "19/10/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/2D7DCC192333E111BF43AE7703724E49",
-        },
-        {
-          name: "Introduction to Cloud Computing",
-          provider: "IBM / Coursera",
-          date: "01/11/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/6XGRYV9R3N6M",
-        },
-        {
-          name: "Introduction to HTML, CSS, & JavaScript",
-          provider: "IBM / Coursera",
-          date: "05/11/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/M737G5HIOLSR",
-        },
-        {
-          name: "Getting Started with Git and GitHub",
-          provider: "IBM / Coursera",
-          date: "09/11/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/96YB8I5KSLED",
-        },
-        {
-          name: "Developing Front-End Apps with React",
-          provider: "IBM / Coursera",
-          date: "15/11/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/VXKF0QT8UUKU",
-        },
-        {
-          name: "Developing Back-End Apps with Node.js and Express",
-          provider: "IBM / Coursera",
-          date: "19/11/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/NJT5L5CJFI1S",
-        },
-        {
-          name: "Python for Data Science, AI & Development",
-          provider: "IBM / Coursera",
-          date: "26/11/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/A4F3BYT1VDOW",
-        },
-        {
-          name: "Developing AI Applications with Python and Flask",
-          provider: "IBM / Coursera",
-          date: "29/11/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/WUV2ABTV36NQ",
-        },
-        {
-          name: "Django Application Development with SQL and Databases",
-          provider: "IBM / Coursera",
-          date: "03/12/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/1SHVXOJ4X0ZG",
-        },
-        {
-          name: "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
-          provider: "IBM / Coursera",
-          date: "15/12/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/6S74R0Z0N6F1",
-        },
-        {
-          name: "Application Development using Microservices and Serverless",
-          provider: "IBM / Coursera",
-          date: "24/12/2025",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/R0WQAGRJJBZG",
-        },
-      ],
+      professionalCertificate: {
+        name: "IBM Full Stack Software Developer – Professional Certificate",
+        provider: "IBM / Coursera",
+        date: "Ocak 2026",
+        link: "https://www.coursera.org/account/accomplishments/professional-cert/ZA0GJFIPNUUT",
+        description:
+          "Frontend, backend, cloud, DevOps, mikroservisler ve bir capstone projesi içeren 15 dersten oluşan kapsamlı bir program. Full-stack geliştirme, modern web teknolojileri, containerization ve mikroservis mimarisi konularında pratik deneyim kazandım.",
+        includedCoursesLabel: "Dahil Edilen Dersler (15)",
+        includedCourses: [
+          {
+            name: "Introduction to Software Engineering",
+            link: "https://www.coursera.org/account/accomplishments/verify/2D7DCC192333E111BF43AE7703724E49",
+          },
+          {
+            name: "Introduction to Cloud Computing",
+            link: "https://www.coursera.org/account/accomplishments/verify/6XGRYV9R3N6M",
+          },
+          {
+            name: "Introduction to HTML, CSS, & JavaScript",
+            link: "https://www.coursera.org/account/accomplishments/verify/M737G5HIOLSR",
+          },
+          {
+            name: "Getting Started with Git and GitHub",
+            link: "https://www.coursera.org/account/accomplishments/verify/96YB8I5KSLED",
+          },
+          {
+            name: "Developing Front-End Apps with React",
+            link: "https://www.coursera.org/account/accomplishments/verify/VXKF0QT8UUKU",
+          },
+          {
+            name: "Developing Back-End Apps with Node.js and Express",
+            link: "https://www.coursera.org/account/accomplishments/verify/NJT5L5CJFI1S",
+          },
+          {
+            name: "Python for Data Science, AI & Development",
+            link: "https://www.coursera.org/account/accomplishments/verify/A4F3BYT1VDOW",
+          },
+          {
+            name: "Developing AI Applications with Python and Flask",
+            link: "https://www.coursera.org/account/accomplishments/verify/WUV2ABTV36NQ",
+          },
+          {
+            name: "Django Application Development with SQL and Databases",
+            link: "https://www.coursera.org/account/accomplishments/verify/1SHVXOJ4X0ZG",
+          },
+          {
+            name: "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+            link: "https://www.coursera.org/account/accomplishments/verify/6S74R0Z0N6F1",
+          },
+          {
+            name: "Application Development using Microservices and Serverless",
+            link: "https://www.coursera.org/account/accomplishments/verify/R0WQAGRJJBZG",
+          },
+          {
+            name: "Full Stack Application Development Capstone Project",
+            link: "https://www.coursera.org/account/accomplishments/certificate/H4ZI52GG1D33",
+          },
+          {
+            name: "Full Stack Software Developer Assessment",
+            link: "https://www.coursera.org/account/accomplishments/certificate/II3FDTP2P0HN",
+          },
+          {
+            name: "Generative AI: Elevate your Software Development Career",
+            link: "https://www.coursera.org/account/accomplishments/certificate/YXGFB0KKV1QN",
+          },
+          {
+            name: "Software Developer Career Guide and Interview Preparation",
+            link: "https://www.coursera.org/account/accomplishments/certificate/P5X8G02PRZAJ",
+          },
+        ],
+      },
     },
     contact: {
       title: "Birlikte Çalışalım",
@@ -364,9 +362,9 @@ export const translations: Record<Lang, Translations> = {
       title: "About",
       text:
         "Full-Stack Developer with hands-on experience building production-ready applications using React, Node.js, TypeScript, and ASP.NET Core. " +
+        "Holder of the IBM Full Stack Software Developer Professional Certificate. " +
         "Developed Moodify-AI, a full-stack music recommendation platform integrating Spotify and Gemini AI APIs. " +
         "Delivered well-structured RESTful APIs during internship and collaborated closely with frontend teams to ensure smooth integration. " +
-        "Currently improving TypeScript expertise and completing the IBM Full Stack Software Developer Professional Certificate while actively developing English proficiency for international collaboration. " +
         "Interested in full-stack or backend roles focused on scalable SaaS products and AI-powered solutions.",
     },
     experience: {
@@ -472,7 +470,7 @@ export const translations: Record<Lang, Translations> = {
         {
           name: "IBM Full Stack Software Engineering",
           role: "Full-Stack Developer",
-          tagline: "Comprehensive project archive for IBM certificate program",
+          tagline: "Capstone project repository for IBM Full Stack Software Developer Professional Certificate",
           technologies: "Python, JavaScript, React, Node.js, Flask, HTML, CSS, Git",
           link: "https://github.com/MustafaEP/IBM-Full-Stack-Software-Engineering",
         },
@@ -521,85 +519,77 @@ export const translations: Record<Lang, Translations> = {
     },
     certifications: {
       title: "Certificates",
-      items: [
-        {
-          name: "Introduction to Software Engineering",
-          provider: "IBM / Coursera",
-          date: "2025-10-19",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/2D7DCC192333E111BF43AE7703724E49",
-        },
-        {
-          name: "Introduction to Cloud Computing",
-          provider: "IBM / Coursera",
-          date: "2025-11-01",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/6XGRYV9R3N6M",
-        },
-        {
-          name: "Introduction to HTML, CSS, & JavaScript",
-          provider: "IBM / Coursera",
-          date: "2025-11-05",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/M737G5HIOLSR",
-        },
-        {
-          name: "Getting Started with Git and GitHub",
-          provider: "IBM / Coursera",
-          date: "2025-11-09",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/96YB8I5KSLED",
-        },
-        {
-          name: "Developing Front-End Apps with React",
-          provider: "IBM / Coursera",
-          date: "2025-11-15",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/VXKF0QT8UUKU",
-        },
-        {
-          name: "Developing Back-End Apps with Node.js and Express",
-          provider: "IBM / Coursera",
-          date: "2025-11-19",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/NJT5L5CJFI1S",
-        },
-        {
-          name: "Python for Data Science, AI & Development",
-          provider: "IBM / Coursera",
-          date: "2025-11-26",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/A4F3BYT1VDOW",
-        },
-        {
-          name: "Developing AI Applications with Python and Flask",
-          provider: "IBM / Coursera",
-          date: "2025-11-29",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/WUV2ABTV36NQ",
-        },
-        {
-          name: "Django Application Development with SQL and Databases",
-          provider: "IBM / Coursera",
-          date: "2025-12-03",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/1SHVXOJ4X0ZG",
-        },
-        {
-          name: "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
-          provider: "IBM / Coursera",
-          date: "2025-12-15",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/6S74R0Z0N6F1",
-        },
-        {
-          name: "Application Development using Microservices and Serverless",
-          provider: "IBM / Coursera",
-          date: "2025-12-24",
-          link:
-            "https://www.coursera.org/account/accomplishments/verify/R0WQAGRJJBZG",
-        },
-      ],
+      professionalCertificate: {
+        name: "IBM Full Stack Software Developer – Professional Certificate",
+        provider: "IBM / Coursera",
+        date: "January 2026",
+        link: "https://www.coursera.org/account/accomplishments/professional-cert/ZA0GJFIPNUUT",
+        description:
+          "Comprehensive program consisting of 15 courses covering frontend, backend, cloud, DevOps, microservices, and a capstone project. Gained practical experience in full-stack development, modern web technologies, containerization, and microservices architecture.",
+        includedCoursesLabel: "Included Courses (15)",
+        includedCourses: [
+          {
+            name: "Introduction to Software Engineering",
+            link: "https://www.coursera.org/account/accomplishments/verify/2D7DCC192333E111BF43AE7703724E49",
+          },
+          {
+            name: "Introduction to Cloud Computing",
+            link: "https://www.coursera.org/account/accomplishments/verify/6XGRYV9R3N6M",
+          },
+          {
+            name: "Introduction to HTML, CSS, & JavaScript",
+            link: "https://www.coursera.org/account/accomplishments/verify/M737G5HIOLSR",
+          },
+          {
+            name: "Getting Started with Git and GitHub",
+            link: "https://www.coursera.org/account/accomplishments/verify/96YB8I5KSLED",
+          },
+          {
+            name: "Developing Front-End Apps with React",
+            link: "https://www.coursera.org/account/accomplishments/verify/VXKF0QT8UUKU",
+          },
+          {
+            name: "Developing Back-End Apps with Node.js and Express",
+            link: "https://www.coursera.org/account/accomplishments/verify/NJT5L5CJFI1S",
+          },
+          {
+            name: "Python for Data Science, AI & Development",
+            link: "https://www.coursera.org/account/accomplishments/verify/A4F3BYT1VDOW",
+          },
+          {
+            name: "Developing AI Applications with Python and Flask",
+            link: "https://www.coursera.org/account/accomplishments/verify/WUV2ABTV36NQ",
+          },
+          {
+            name: "Django Application Development with SQL and Databases",
+            link: "https://www.coursera.org/account/accomplishments/verify/1SHVXOJ4X0ZG",
+          },
+          {
+            name: "Introduction to Containers w/ Docker, Kubernetes & OpenShift",
+            link: "https://www.coursera.org/account/accomplishments/verify/6S74R0Z0N6F1",
+          },
+          {
+            name: "Application Development using Microservices and Serverless",
+            link: "https://www.coursera.org/account/accomplishments/verify/R0WQAGRJJBZG",
+          },
+          {
+            name: "Full Stack Application Development Capstone Project",
+            link: "https://www.coursera.org/account/accomplishments/certificate/H4ZI52GG1D33",
+          },
+          {
+            name: "Full Stack Software Developer Assessment",
+            link: "https://www.coursera.org/account/accomplishments/certificate/II3FDTP2P0HN",
+          },
+          {
+            name: "Generative AI: Elevate your Software Development Career",
+            link: "https://www.coursera.org/account/accomplishments/certificate/YXGFB0KKV1QN",
+          },
+          {
+            name: "Software Developer Career Guide and Interview Preparation",
+            link: "https://www.coursera.org/account/accomplishments/certificate/P5X8G02PRZAJ",
+          },
+        ],
+      },
     },
     contact: {
       title: "Let's Work Together",
