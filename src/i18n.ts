@@ -33,6 +33,16 @@ type Translations = {
   };
   projects: {
     title: string;
+    activeTitle: string;
+    activeSubtitle: string;
+    active: {
+      name: string;
+      status: string;
+      description: string;
+      liveUrl: string;
+      githubUrl: string;
+      tech: string;
+    }[];
     featured: {
       name: string;
       role: string;
@@ -137,6 +147,29 @@ export const translations: Record<Lang, Translations> = {
     },
     projects: {
       title: "Öne Çıkan Projeler",
+      activeTitle: "Aktif Olarak Geliştirilen Projeler",
+      activeSubtitle:
+        "Şu anda üzerinde çalıştığım ve sürekli geliştirdiğim projeler. Canlı ortamda gerçek kullanıcı senaryolarına göre iteratif olarak evriliyorlar.",
+      active: [
+        {
+          name: "Sendika Yönetim Sistemi (Yönetim Paneli)",
+          status: "Aktif geliştirme • Beta aşaması",
+          description:
+            "Sendikalar için üyelik, aidat, bölge/şube ve iletişim süreçlerini tek bir yerden yöneten, rol tabanlı erişim kontrollü kurumsal yönetim platformu. Çok kademeli rol yapısı (ADMIN, MODERATOR, GENEL_BASKAN, IL_BASKANI vb.) ve kapsamlı yetki matrisi ile karmaşık organizasyonel hiyerarşileri destekliyor.",
+          liveUrl: "https://yonetim.mustafaerhanportakal.com",
+          githubUrl: "https://github.com/MustafaEP/yonetim-paneli",
+          tech: "NestJS • Prisma • PostgreSQL • React • Material UI • Docker • Nginx",
+        },
+        {
+          name: "MoodWeave",
+          status: "Aktif geliştirme • MVP canlıda",
+          description:
+            "Kullanıcıların yazdığı metinleri (chat, günlük, notlar) analiz ederek duygu, niyet ve bağlam çıkarımı yapan; bu veriyi kullanarak kişiselleştirilmiş deneyimler üretmeyi hedefleyen modern bir web uygulaması. Duygu analizi ve metin temelli içgörüler üzerine kurgulanmış bir deneysel ürün.",
+          liveUrl: "https://moodweave.mustafaerhanportakal.com",
+          githubUrl: "https://github.com/MustafaEP/moodweave",
+          tech: "React • TypeScript • Tailwind CSS • Node.js • API Entegrasyonları",
+        },
+      ],
       featured: [
         {
           name: "Moodify-AI",
@@ -395,6 +428,29 @@ export const translations: Record<Lang, Translations> = {
     },
     projects: {
       title: "Featured Projects",
+      activeTitle: "Actively Developed Projects",
+      activeSubtitle:
+        "Projects that I’m actively working on and iterating based on real-world usage and feedback. These are live and evolving products.",
+      active: [
+        {
+          name: "Union Management System (Admin Panel)",
+          status: "Active development • Beta stage",
+          description:
+            "Enterprise-grade management platform for unions with role-based access control, enabling centralized member management, fee tracking, regional/branch hierarchy, content, and document workflows. Supports a rich role matrix (ADMIN, MODERATOR, GENERAL_PRESIDENT, PROVINCIAL_HEAD, etc.) to model complex organizations.",
+          liveUrl: "https://yonetim.mustafaerhanportakal.com",
+          githubUrl: "https://github.com/MustafaEP/yonetim-paneli",
+          tech: "NestJS • Prisma • PostgreSQL • React • Material UI • Docker • Nginx",
+        },
+        {
+          name: "MoodWeave",
+          status: "Active development • Live MVP",
+          description:
+            "Experimental web app that analyzes user-written text (chat, journal, notes) to extract emotion, intent, and context, then uses these insights to craft personalized experiences. Focused on text-driven mood analysis and insight generation.",
+          liveUrl: "https://moodweave.mustafaerhanportakal.com",
+          githubUrl: "https://github.com/MustafaEP/moodweave",
+          tech: "React • TypeScript • Tailwind CSS • Node.js • API Integrations",
+        },
+      ],
       featured: [
         {
           name: "Moodify-AI",
