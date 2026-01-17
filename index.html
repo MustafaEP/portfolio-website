@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -211,6 +211,18 @@
   <body>
     <!-- Pre-rendered content for SEO and crawlers -->
     <div id="root">
+      <!-- Initial visible content for search engines (will be enhanced by React) -->
+      <div style="min-height: 100vh; padding: 2rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+        <h1 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem; color: #171717;">Mustafa Erhan Portakal</h1>
+        <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem; color: #404040;">Full-Stack Developer</h2>
+        <p style="font-size: 1.125rem; line-height: 1.75; color: #525252; margin-bottom: 1rem;">
+          Building scalable web applications with React, Node.js, and ASP.NET Core. Experienced in API design, system integration, and delivering production-ready solutions.
+        </p>
+        <p style="font-size: 1rem; line-height: 1.75; color: #525252;">
+          Available for full-time opportunities. Contact: <a href="mailto:portakalm11@gmail.com" style="color: #0066cc;">portakalm11@gmail.com</a>
+        </p>
+      </div>
+      
       <!-- This content will be replaced by React, but crawlers see it immediately -->
       <noscript>
         <style>
@@ -270,8 +282,9 @@
         </div>
       </noscript>
       
-      <!-- Semantic HTML for crawlers (hidden, replaced by React) -->
-      <div style="position: absolute; left: -9999px; top: -9999px;" aria-hidden="true">
+      <!-- Semantic HTML for crawlers (visible to crawlers, replaced by React) -->
+      <!-- This content is accessible to search engines but visually hidden from users -->
+      <div id="seo-content" style="position: absolute; left: 0; top: 0; width: 1px; height: 1px; padding: 0; margin: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">
         <header>
           <h1>Mustafa Erhan Portakal - Full-Stack Developer</h1>
           <h2>Building Scalable Web Applications</h2>
