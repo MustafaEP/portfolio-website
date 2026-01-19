@@ -1,4 +1,4 @@
-export type Lang = "tr" | "en";
+import type { Lang } from "./types";
 
 type Translations = {
   navbar: {
