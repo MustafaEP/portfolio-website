@@ -17,7 +17,7 @@ export const About = ({ translations }: AboutProps) => {
           {translations.title}
         </h2>
         <div className="prose prose-lg max-w-none">
-          <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed transition-colors">
+          <p className="text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed whitespace-pre-line transition-colors">
             {translations.text}
           </p>
         </div>

@@ -49,7 +49,7 @@ export const FeaturedProjectCard = ({ project, lang }: FeaturedProjectCardProps)
       <div className="space-y-4 mb-6">
         <div>
           <h4 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-2 uppercase tracking-wide transition-colors">
-            {lang === "tr" ? "Problem" : "Problem"}
+            {lang === "tr" ? "Sorun" : "Problem"}
           </h4>
           <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed transition-colors">
             {project.problem}

@@ -103,21 +103,20 @@ export const translations: Record<Lang, Translations> = {
     },
     hero: {
       title: "Mustafa Erhan Portakal",
-      role: "Full-Stack Developer",
+      role: "Backend Odaklı Full-Stack Engineer",
       subtitle:
-        "React, Node.js ve ASP.NET Core ile ölçeklenebilir web uygulamaları geliştiriyorum. API tasarımı, sistem entegrasyonu ve üretime hazır çözümler sunma konusunda deneyimliyim.",
+        "Backend odaklı full-stack çözümler geliştiriyorum (React, Node.js, ASP.NET Core). API tasarımı, sistem entegrasyonu ve üretime hazır uygulamalar konusunda deneyimliyim.",
       badge: "İş fırsatlarına açık",
       ctaPrimary: "Projelerime göz at",
       ctaSecondary: "CV'mi indir",
     },
     about: {
       title: "Hakkımda",
-      text:
-        "React, Node.js, TypeScript ve ASP.NET Core kullanarak üretime hazır uygulamalar geliştirme konusunda deneyimli Full-Stack Developer. " +
-        "IBM Full Stack Software Developer Professional Certificate sahibiyim. " +
-        "Spotify ve Gemini AI API'lerini entegre eden Moodify-AI adlı full-stack müzik öneri platformunu geliştirdim. " +
-        "Staj süresince iyi yapılandırılmış RESTful API'ler geliştirdim ve sorunsuz entegrasyon sağlamak için frontend ekipleriyle yakın işbirliği yaptım. " +
-        "Ölçeklenebilir SaaS ürünleri ve AI destekli çözümlere odaklanan full-stack veya backend rollerinde ilgileniyorum.",
+      text: `Backend ağırlıklı çalışan bir yazılım geliştiricisiyim. Ölçeklenebilir sistemler, modern backend mimarileri ve AI entegrasyonlu ürünler geliştirmeye odaklanıyorum.
+
+Staj sürecimde ASP.NET Core ile RESTful API’ler geliştirerek backend temellerimi sağlamlaştırdım. Günümüzde ağırlıklı olarak Node.js, TypeScript, Django ve FastAPI ile çalışıyor; üretim ortamında çalışan, sürdürülebilir sistemler tasarlıyorum.
+
+Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem veriyorum. Backend veya full-stack rollerinde, ölçeklenebilir SaaS ürünleri ve AI tabanlı sistemler geliştirmeyi hedefliyorum.`,
     },
     experience: {
       title: "Deneyim",
@@ -149,13 +148,13 @@ export const translations: Record<Lang, Translations> = {
       title: "Öne Çıkan Projeler",
       activeTitle: "Aktif Olarak Geliştirilen Projeler",
       activeSubtitle:
-        "Şu anda üzerinde çalıştığım ve sürekli geliştirdiğim projeler. Canlı ortamda gerçek kullanıcı senaryolarına göre iteratif olarak evriliyorlar.",
+        "Canlıda olan ve sürekli iyileştirdiğim projeler. Gerçek kullanım verisi ve geri bildirimle iteratif olarak gelişiyorlar.",
       active: [
         {
           name: "Sendika Yönetim Sistemi (Yönetim Paneli)",
           status: "Aktif geliştirme • Beta aşaması",
           description:
-            "Sendikalar için üyelik, aidat, bölge/şube ve iletişim süreçlerini tek bir yerden yöneten, rol tabanlı erişim kontrollü kurumsal yönetim platformu. Çok kademeli rol yapısı (ADMIN, MODERATOR, GENEL_BASKAN, IL_BASKANI vb.) ve kapsamlı yetki matrisi ile karmaşık organizasyonel hiyerarşileri destekliyor.",
+            "Sendikalar için üyelik, aidat, şube/il/ilçe, içerik ve evrak süreçlerini tek panelde toplayan kurumsal platform. Hiyerarşik RBAC (ADMIN → MODERATOR → GENEL_BAŞKAN → İL/İLÇE/İŞYERİ) ve yetki matrisi ile karmaşık organizasyonları modeller. Modüller: kullanıcı/rol yönetimi, başvuru-onay akışları, raporlama, doküman (PDF) üretimi, bildirim & iletişim.",
           liveUrl: "https://yonetim.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/yonetim-paneli",
           tech: "NestJS • Prisma • PostgreSQL • React • Material UI • Docker • Nginx",
@@ -164,10 +163,10 @@ export const translations: Record<Lang, Translations> = {
           name: "MoodWeave",
           status: "Aktif geliştirme • MVP canlıda",
           description:
-            "Kullanıcıların yazdığı metinleri (chat, günlük, notlar) analiz ederek duygu, niyet ve bağlam çıkarımı yapan; bu veriyi kullanarak kişiselleştirilmiş deneyimler üretmeyi hedefleyen modern bir web uygulaması. Duygu analizi ve metin temelli içgörüler üzerine kurgulanmış bir deneysel ürün.",
+            "Kullanıcının yazdığı metinden ruh halini analiz edip Spotify üzerinden müzik öneren production-grade web uygulaması. NestJS API Gateway + Django Core + FastAPI AI servisleri ile çoklu servis mimarisi; tek VPS üzerinde Docker/Nginx, HTTPS, rate limiting, logging, healthcheck ve GitHub Actions ile CI/CD.",
           liveUrl: "https://moodweave.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/moodweave",
-          tech: "React • TypeScript • Tailwind CSS • Node.js • API Entegrasyonları",
+          tech: "React (Vite) • NestJS (Gateway) • Django (Core) • FastAPI (AI) • Docker Compose • Nginx • GitHub Actions • Let's Encrypt",
         },
       ],
       featured: [
@@ -188,23 +187,6 @@ export const translations: Record<Lang, Translations> = {
             "Gemini AI kullanarak duygu analizi pipeline'ı oluşturdum",
           ],
           link: "https://github.com/MustafaEP/Moodify-AI",
-        },
-        {
-          name: "Yönetim Paneli",
-          role: "Full-Stack Developer",
-          tagline: "Rol tabanlı erişim kontrolü ile kurumsal yönetim platformu",
-          problem:
-            "Çok katmanlı organizasyonlar, üye yönetimi, aidat takibi ve bölge/şube koordinasyonu için merkezi bir sisteme ihtiyaç duyuyor.",
-          solution:
-            "RBAC ile üye yönetimi, aidat takibi, bölge/şube yönetimi, içerik yönetimi ve evrak üretimi modüllerini içeren çok katmanlı bir platform geliştirdim.",
-          outcome: "Docker containerization ve mikroservis mimarisi ile ölçeklenebilir sistem",
-          technologies: "TypeScript, NestJS, Prisma, React, Material-UI, Docker, PostgreSQL",
-          highlights: [
-            "Rol tabanlı erişim kontrolü (RBAC) sistemi tasarladım",
-            "Docker ile mikroservis mimarisi uyguladım",
-            "Karmaşık organizasyonel hiyerarşi yönetimi geliştirdim",
-          ],
-          link: "https://github.com/MustafaEP/yonetim-paneli",
         },
         {
           name: "AI Emotion Project",
@@ -368,8 +350,8 @@ export const translations: Record<Lang, Translations> = {
     contact: {
       title: "Birlikte Çalışalım",
       text:
-        "Full-Stack Developer olarak tam zamanlı fırsatları aktif olarak arıyorum. Bir ürün veya ekip kuruyorsanız ve uygun olduğumu düşünüyorsanız, sizden haber almak isterim.",
-      cta: "İletişime geç",
+        "Backend / Full-Stack rollerine açığım (Remote/Hybrid). Proje/rol, teknoloji stack’i ve takvim bilgisini paylaşırsanız 24–48 saat içinde dönüş yaparım.",
+      cta: "E-posta gönder",
     },
   },
 
@@ -379,26 +361,25 @@ export const translations: Record<Lang, Translations> = {
       experience: "Experience",
       projects: "Projects",
       skills: "Skills",
-      certifications: "Certificates",
+      certifications: "Certifications",
       contact: "Contact",
     },
     hero: {
       title: "Mustafa Erhan Portakal",
-      role: "Full-Stack Developer",
+      role: "Backend-Focused Full-Stack Engineer",
       subtitle:
-        "Building scalable web applications with React, Node.js, and ASP.NET Core. Experienced in API design, system integration, and delivering production-ready solutions.",
+        "I build backend-focused full-stack solutions (React, Node.js, ASP.NET Core). Experienced in API design, system integration, and delivering production-ready applications.",
       badge: "Open to opportunities",
       ctaPrimary: "View my work",
       ctaSecondary: "Download CV",
     },
     about: {
       title: "About",
-      text:
-        "Full-Stack Developer with hands-on experience building production-ready applications using React, Node.js, TypeScript, and ASP.NET Core. " +
-        "Holder of the IBM Full Stack Software Developer Professional Certificate. " +
-        "Developed Moodify-AI, a full-stack music recommendation platform integrating Spotify and Gemini AI APIs. " +
-        "Delivered well-structured RESTful APIs during internship and collaborated closely with frontend teams to ensure smooth integration. " +
-        "Interested in full-stack or backend roles focused on scalable SaaS products and AI-powered solutions.",
+      text: `I'm a backend-focused full-stack engineer. I focus on building scalable systems, modern backend architectures, and AI-integrated products.
+
+During my internship, I strengthened my backend foundations by developing RESTful APIs with ASP.NET Core. Today I mainly work with Node.js, TypeScript, Django, and FastAPI, designing sustainable systems that run in production.
+
+I value clean code, well-designed architecture, and understanding production behavior. I'm aiming to build scalable SaaS products and AI-based systems in backend or full-stack roles.`,
     },
     experience: {
       title: "Experience",
@@ -430,13 +411,13 @@ export const translations: Record<Lang, Translations> = {
       title: "Featured Projects",
       activeTitle: "Actively Developed Projects",
       activeSubtitle:
-        "Projects that I’m actively working on and iterating based on real-world usage and feedback. These are live and evolving products.",
+        "Live projects I continuously improve based on real-world usage and feedback.",
       active: [
         {
           name: "Union Management System (Admin Panel)",
           status: "Active development • Beta stage",
           description:
-            "Enterprise-grade management platform for unions with role-based access control, enabling centralized member management, fee tracking, regional/branch hierarchy, content, and document workflows. Supports a rich role matrix (ADMIN, MODERATOR, GENERAL_PRESIDENT, PROVINCIAL_HEAD, etc.) to model complex organizations.",
+            "Enterprise platform for unions that centralizes member management, dues, branch/region structure, content, and document workflows. Models complex organizations with hierarchical RBAC and a permission matrix (ADMIN → MODERATOR → PRESIDENT → regional roles). Includes user/role management, approval flows, reporting, PDF document generation, and notifications.",
           liveUrl: "https://yonetim.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/yonetim-paneli",
           tech: "NestJS • Prisma • PostgreSQL • React • Material UI • Docker • Nginx",
@@ -445,10 +426,10 @@ export const translations: Record<Lang, Translations> = {
           name: "MoodWeave",
           status: "Active development • Live MVP",
           description:
-            "Experimental web app that analyzes user-written text (chat, journal, notes) to extract emotion, intent, and context, then uses these insights to craft personalized experiences. Focused on text-driven mood analysis and insight generation.",
+            "Production-grade web app that analyzes mood from user text and recommends music via Spotify. Multi-service architecture with NestJS API Gateway + Django Core + FastAPI AI; deployed on a single VPS with Docker/Nginx, HTTPS, rate limiting, logging, healthchecks, and GitHub Actions CI/CD.",
           liveUrl: "https://moodweave.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/moodweave",
-          tech: "React • TypeScript • Tailwind CSS • Node.js • API Integrations",
+          tech: "React (Vite) • NestJS (Gateway) • Django (Core) • FastAPI (AI) • Docker Compose • Nginx • GitHub Actions • Let's Encrypt",
         },
       ],
       featured: [
@@ -469,24 +450,6 @@ export const translations: Record<Lang, Translations> = {
             "Built sentiment analysis pipeline using Gemini AI",
           ],
           link: "https://github.com/MustafaEP/Moodify-AI",
-        },
-        {
-          name: "Management Panel",
-          role: "Full-Stack Developer",
-          tagline: "Enterprise management platform with role-based access control",
-          problem:
-            "Multi-tier organizations need a centralized system for member management, fee tracking, and region/branch coordination.",
-          solution:
-            "Developed a multi-tier platform with RBAC including member management, fee tracking, region/branch management, content management, and document generation modules.",
-          outcome: "Scalable system with Docker containerization and microservices architecture",
-          technologies:
-            "TypeScript, NestJS, Prisma, React, Material-UI, Docker, PostgreSQL",
-          highlights: [
-            "Designed role-based access control (RBAC) system",
-            "Implemented microservices architecture with Docker",
-            "Built complex organizational hierarchy management",
-          ],
-          link: "https://github.com/MustafaEP/yonetim-paneli",
         },
         {
           name: "AI Emotion Project",
@@ -650,8 +613,8 @@ export const translations: Record<Lang, Translations> = {
     contact: {
       title: "Let's Work Together",
       text:
-        "I'm actively seeking full-time opportunities as a Full-Stack Developer. If you're building a product or team and think I'd be a good fit, I'd love to hear from you.",
-      cta: "Get in touch",
+        "I'm open to Backend / Full-Stack roles (Remote/Hybrid). If you share a brief note about the role, stack, and timeline, I’ll get back within 24–48 hours.",
+      cta: "Send email",
     },
   },
 };

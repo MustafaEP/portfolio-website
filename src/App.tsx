@@ -59,7 +59,7 @@ function App() {
         <Contact translations={t.contact} />
       </main>
 
-      <Footer />
+      <Footer lang={lang} />
     </div>
   );
 }

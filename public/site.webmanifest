@@ -18,7 +18,7 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
-  "description": "Full-Stack Developer Portfolio - Mustafa Erhan Portakal",
+  "description": "Backend & Full-Stack Developer Portfolio - Mustafa Erhan Portakal. Scalable systems, Node.js, TypeScript, Django, FastAPI, AI.",
   "start_url": "/",
   "scope": "/"
 }

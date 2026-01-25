@@ -1,4 +1,10 @@
-export const Footer = () => {
+import type { Lang } from "../../types";
+
+interface FooterProps {
+  lang: Lang;
+}
+
+export const Footer = ({ lang }: FooterProps) => {
   return (
     <footer
       className="border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-dark-bg transition-colors"
@@ -7,7 +13,8 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-sm text-neutral-500 dark:text-neutral-400 transition-colors">
-            © {new Date().getFullYear()} Mustafa Erhan Portakal. All rights reserved.
+            © {new Date().getFullYear()} Mustafa Erhan Portakal.{" "}
+            {lang === "tr" ? "Tüm hakları saklıdır." : "All rights reserved."}
           </p>
           <div className="flex items-center gap-6">
             <a

@@ -87,7 +87,7 @@ export const Hero = ({ translations, lang }: HeroProps) => {
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
               />
             </svg>
-            <span>Istanbul, Turkey</span>
+            <span>{lang === "tr" ? "İstanbul, Türkiye" : "Istanbul, Turkey"}</span>
           </div>
           <a
             href="mailto:portakalm11@gmail.com"
