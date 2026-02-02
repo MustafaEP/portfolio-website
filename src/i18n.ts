@@ -7,6 +7,7 @@ type Translations = {
     projects: string;
     skills: string;
     certifications: string;
+    github: string;
     contact: string;
   };
   hero: {
@@ -89,6 +90,12 @@ type Translations = {
     text: string;
     cta: string;
   };
+  github: {
+    title: string;
+    description: string;
+    githubLabel: string;
+    statsLabel: string;
+  };
 };
 
 export const translations: Record<Lang, Translations> = {
@@ -99,6 +106,7 @@ export const translations: Record<Lang, Translations> = {
       projects: "Projeler",
       skills: "Yetenekler",
       certifications: "Sertifikalar",
+      github: "GitHub",
       contact: "İletişim",
     },
     hero: {
@@ -353,6 +361,13 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
         "Backend / Full-Stack rollerine açığım (Remote/Hybrid). Proje/rol, teknoloji stack’i ve takvim bilgisini paylaşırsanız 24–48 saat içinde dönüş yaparım.",
       cta: "E-posta gönder",
     },
+    github: {
+      title: "Teknik Ayak İzi",
+      description:
+        "Aşağıda GitHub üzerindeki güncel geliştirme aktivitelerim ve teknik ayak izim yer almaktadır. Açık kaynak katkılarım, kişisel projelerim ve sürekli öğrenme yolculuğum hakkında bilgi edinebilirsiniz.",
+      githubLabel: "GitHub Profilim",
+      statsLabel: "Aktivite Özeti",
+    },
   },
 
   en: {
@@ -362,6 +377,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
       projects: "Projects",
       skills: "Skills",
       certifications: "Certifications",
+      github: "GitHub",
       contact: "Contact",
     },
     hero: {
@@ -615,6 +631,13 @@ I value clean code, well-designed architecture, and understanding production beh
       text:
         "I'm open to Backend / Full-Stack roles (Remote/Hybrid). If you share a brief note about the role, stack, and timeline, I’ll get back within 24–48 hours.",
       cta: "Send email",
+    },
+    github: {
+      title: "Technical Footprint",
+      description:
+        "Below is a snapshot of my recent development activity and technical footprint on GitHub. You can explore my open-source contributions, personal projects, and continuous learning journey.",
+      githubLabel: "GitHub Profile",
+      statsLabel: "Activity Overview",
     },
   },
 };

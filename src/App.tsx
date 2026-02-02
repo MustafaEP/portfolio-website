@@ -8,6 +8,7 @@ import { Experience } from "./components/sections/Experience";
 import { Projects } from "./components/sections/Projects";
 import { Skills } from "./components/sections/Skills";
 import { Certifications } from "./components/sections/Certifications";
+import { TechnicalFootprint } from "./components/sections/TechnicalFootprint";
 import { Contact } from "./components/sections/Contact";
 import { Footer } from "./components/Footer";
 
@@ -28,6 +29,7 @@ function App() {
     { href: "#projects", label: t.navbar.projects },
     { href: "#skills", label: t.navbar.skills },
     { href: "#certifications", label: t.navbar.certifications },
+    { href: "#github", label: t.navbar.github },
     { href: "#contact", label: t.navbar.contact },
   ];
 
@@ -56,6 +58,7 @@ function App() {
         <Projects translations={t.projects} lang={lang} />
         <Skills translations={t.skills} />
         <Certifications translations={t.certifications} lang={lang} />
+        <TechnicalFootprint translations={t.github} />
         <Contact translations={t.contact} />
       </main>
 
