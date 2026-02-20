@@ -160,23 +160,23 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
         "Canlıda olan ve sürekli iyileştirdiğim projeler. Gerçek kullanım verisi ve geri bildirimle iteratif olarak gelişiyorlar.",
       active: [
         {
-          name: "Sendika Yönetim Sistemi (Yönetim Paneli)",
+          name: "Sendika Yönetim Paneli",
           status: "Aktif geliştirme • Beta aşaması",
           description:
-            "Sendikalar için üyelik, aidat, şube/il/ilçe, içerik ve evrak süreçlerini tek panelde toplayan kurumsal platform. Hiyerarşik RBAC (ADMIN → MODERATOR → GENEL_BAŞKAN → İL/İLÇE/İŞYERİ) ve yetki matrisi ile karmaşık organizasyonları modeller. Modüller: kullanıcı/rol yönetimi, başvuru-onay akışları, raporlama, doküman (PDF) üretimi, bildirim & iletişim.",
+            "16 modülden oluşan kurumsal sendika yönetim platformu. Üye kaydı ve onay akışları, hiyerarşik RBAC (ADMIN → İL/İLÇE → ÜYE), ödemeler ve tevkifat-muhasebe, Puppeteer ile PDF üretimi, doküman şablonları, AWS SES e-posta & NetGSM SMS bildirimleri, socket.io ile anlık bildirimler, içerik yönetimi (haber/duyuru/etkinlik) ve audit log. BullMQ ile arka plan kuyruğu, Recharts ile raporlama.",
           liveUrl: "https://yonetim.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/yonetim-paneli",
-          tech: "NestJS • Prisma • PostgreSQL • React • Material UI • Docker • Nginx",
+          tech: "NestJS 11 • Prisma 6 • PostgreSQL • Redis • BullMQ • React 19 • MUI 7 • TanStack Query • socket.io • Docker",
           previewImage: "/preview-sendika-yonetim.png",
         },
         {
           name: "Yıldızlara Mektup (Letter to Stars)",
           status: "Aktif geliştirme • Canlıda",
           description:
-            "AI destekli kişisel İngilizce öğrenme ve günlük uygulaması. Kullanıcılar günlüklerini İngilizce yazar, yazılarını seçtikleri IELTS seviyesine (6/7/8/9) göre Gemini AI ile yeniden yazar, yeni kelimeleri öğrenir ve zamanla bir yıldız haritası oluşturur. Her gün = 1 yıldız. Git commit ile otomatik olarak deploy edilir.",
+            "AI destekli kişisel İngilizce öğrenme ve günlük uygulaması. Kullanıcılar günlüklerini İngilizce yazar, yazılarını seçtikleri IELTS seviyesine (6/7/8/9) göre Gemini AI ile yeniden yazar, yeni kelimeleri öğrenir ve zamanla bir yıldız haritası oluşturur. Her gün = 1 yıldız. Django ile admin paneli & analitik, React Native ile mobil uygulama geliştirme sürecinde.",
           liveUrl: "https://lettertostars.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/letter-to-stars",
-          tech: "React (Vite) • TypeScript • Tailwind CSS • NestJS • FastAPI • Gemini API • Docker Compose • Nginx",
+          tech: "React (Vite) • TypeScript • Tailwind CSS • NestJS • FastAPI • Gemini API • Django • React Native • Docker Compose • Nginx",
           previewImage: "/preview-letter-to-stars.png",
         },
         {
@@ -187,6 +187,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           liveUrl: "https://moodweave.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/moodweave",
           tech: "React (Vite) • NestJS (Gateway) • Django (Core) • FastAPI (AI) • Docker Compose • Nginx • GitHub Actions • Let's Encrypt",
+          previewImage: "/preview-moodweave.png",
         },
       ],
       featured: [
@@ -462,23 +463,23 @@ I value clean code, well-designed architecture, and understanding production beh
         "Live projects I continuously improve based on real-world usage and feedback.",
       active: [
         {
-          name: "Union Management System (Admin Panel)",
+          name: "Union Management Panel",
           status: "Active development • Beta stage",
           description:
-            "Enterprise platform for unions that centralizes member management, dues, branch/region structure, content, and document workflows. Models complex organizations with hierarchical RBAC and a permission matrix (ADMIN → MODERATOR → PRESIDENT → regional roles). Includes user/role management, approval flows, reporting, PDF document generation, and notifications.",
+            "Enterprise union management platform with 16 backend modules. Features member enrollment & approval workflows, hierarchical RBAC (ADMIN → regional → member roles), payments & accounting (payroll deductions), PDF generation via Puppeteer, document templates, email (AWS SES) & SMS (NetGSM) notifications, real-time alerts via socket.io, content management (news/announcements/events), reporting with Recharts, and audit logs. Background job queue via BullMQ.",
           liveUrl: "https://yonetim.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/yonetim-paneli",
-          tech: "NestJS • Prisma • PostgreSQL • React • Material UI • Docker • Nginx",
+          tech: "NestJS 11 • Prisma 6 • PostgreSQL • Redis • BullMQ • React 19 • MUI 7 • TanStack Query • socket.io • Docker",
           previewImage: "/preview-sendika-yonetim.png",
         },
         {
           name: "Letter to Stars (Yıldızlara Mektup)",
           status: "Active development • Live",
           description:
-            "AI-powered personal English learning diary app. Users write daily entries in English, rewrite them at a chosen IELTS level (6/7/8/9) using Gemini AI, learn new vocabulary with Turkish meanings, and build a personal star map over time — one star per day. Automatically deployed on every Git commit.",
+            "AI-powered personal English learning diary app. Users write daily entries in English, rewrite them at a chosen IELTS level (6/7/8/9) using Gemini AI, learn new vocabulary with Turkish meanings, and build a personal star map over time — one star per day. Django admin panel & analytics and React Native mobile app are in active development.",
           liveUrl: "https://lettertostars.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/letter-to-stars",
-          tech: "React (Vite) • TypeScript • Tailwind CSS • NestJS • FastAPI • Gemini API • Docker Compose • Nginx",
+          tech: "React (Vite) • TypeScript • Tailwind CSS • NestJS • FastAPI • Gemini API • Django • React Native • Docker Compose • Nginx",
           previewImage: "/preview-letter-to-stars.png",
         },
         {
@@ -489,6 +490,7 @@ I value clean code, well-designed architecture, and understanding production beh
           liveUrl: "https://moodweave.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/moodweave",
           tech: "React (Vite) • NestJS (Gateway) • Django (Core) • FastAPI (AI) • Docker Compose • Nginx • GitHub Actions • Let's Encrypt",
+          previewImage: "/preview-moodweave.png",
         },
       ],
       featured: [
