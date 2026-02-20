@@ -8,13 +8,27 @@ interface ActiveProjectCardProps {
     liveUrl: string;
     githubUrl: string;
     tech: string;
+    previewImage?: string;
   };
   lang: Lang;
 }
 
 export const ActiveProjectCard = ({ project, lang }: ActiveProjectCardProps) => {
   return (
-    <article className="group bg-white dark:bg-dark-surface rounded-lg border border-neutral-200 dark:border-neutral-800 p-6 lg:p-7 hover:shadow-lg dark:hover:shadow-none transition-all duration-300 hover:-translate-y-1 flex flex-col gap-4">
+    <article className="group bg-white dark:bg-dark-surface rounded-lg border border-neutral-200 dark:border-neutral-800 hover:shadow-lg dark:hover:shadow-none transition-all duration-300 hover:-translate-y-1 flex flex-col overflow-hidden">
+      {project.previewImage && (
+        <div className="relative h-44 overflow-hidden bg-neutral-100 dark:bg-neutral-900">
+          <img
+            src={project.previewImage}
+            alt={`${project.name} preview`}
+            className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+        </div>
+      )}
+
+      <div className="p-6 lg:p-7 flex flex-col gap-4 flex-1">
       <div className="flex items-start justify-between gap-3">
         <div>
           <h4 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100 mb-1 transition-colors">
@@ -80,6 +94,7 @@ export const ActiveProjectCard = ({ project, lang }: ActiveProjectCardProps) => 
             />
           </svg>
         </a>
+      </div>
       </div>
     </article>
   );

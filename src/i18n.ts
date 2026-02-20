@@ -43,6 +43,7 @@ type Translations = {
       liveUrl: string;
       githubUrl: string;
       tech: string;
+      previewImage?: string;
     }[];
     featured: {
       name: string;
@@ -166,6 +167,17 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           liveUrl: "https://yonetim.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/yonetim-paneli",
           tech: "NestJS • Prisma • PostgreSQL • React • Material UI • Docker • Nginx",
+          previewImage: "/preview-sendika-yonetim.png",
+        },
+        {
+          name: "Yıldızlara Mektup (Letter to Stars)",
+          status: "Aktif geliştirme • Canlıda",
+          description:
+            "AI destekli kişisel İngilizce öğrenme ve günlük uygulaması. Kullanıcılar günlüklerini İngilizce yazar, yazılarını seçtikleri IELTS seviyesine (6/7/8/9) göre Gemini AI ile yeniden yazar, yeni kelimeleri öğrenir ve zamanla bir yıldız haritası oluşturur. Her gün = 1 yıldız. Git commit ile otomatik olarak deploy edilir.",
+          liveUrl: "https://lettertostars.mustafaerhanportakal.com",
+          githubUrl: "https://github.com/MustafaEP/letter-to-stars",
+          tech: "React (Vite) • TypeScript • Tailwind CSS • NestJS • FastAPI • Gemini API • Docker Compose • Nginx",
+          previewImage: "/preview-letter-to-stars.png",
         },
         {
           name: "MoodWeave",
@@ -247,7 +259,9 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           category: "Frontend Geliştirme",
           skills: [
             "React & TypeScript",
+            "Vite",
             "Tailwind CSS",
+            "Material UI",
             "Responsive Tasarım",
             "State Management",
           ],
@@ -256,27 +270,45 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           category: "Backend Geliştirme",
           skills: [
             "Node.js & Express",
+            "NestJS",
+            "FastAPI (Python)",
+            "Django",
             "ASP.NET Core",
             "RESTful API Tasarımı",
-            "Kimlik Doğrulama (JWT, OAuth2)",
+            "JWT & OAuth2",
+            "Mikroservis Mimarisi",
           ],
         },
         {
-          category: "Veritabanı & Depolama",
+          category: "Veritabanı & ORM",
           skills: [
-            "MongoDB",
             "PostgreSQL",
+            "MongoDB",
             "MS SQL Server",
+            "Prisma",
             "Entity Framework",
+            "SQLite",
           ],
         },
         {
-          category: "DevOps & Araçlar",
+          category: "DevOps & Altyapı",
           skills: [
-            "Git & GitHub",
-            "Docker",
-            "CI/CD Temelleri",
+            "Docker & Docker Compose",
+            "Nginx",
+            "GitHub Actions (CI/CD)",
+            "Linux (VPS)",
+            "Let's Encrypt / HTTPS",
             "Kubernetes (Öğrenme aşamasında)",
+          ],
+        },
+        {
+          category: "AI & Entegrasyonlar",
+          skills: [
+            "Gemini API",
+            "Spotify API",
+            "Hugging Face Transformers",
+            "Prompt Engineering",
+            "Yapılandırılmış AI Çıktısı (JSON)",
           ],
         },
       ],
@@ -437,6 +469,17 @@ I value clean code, well-designed architecture, and understanding production beh
           liveUrl: "https://yonetim.mustafaerhanportakal.com",
           githubUrl: "https://github.com/MustafaEP/yonetim-paneli",
           tech: "NestJS • Prisma • PostgreSQL • React • Material UI • Docker • Nginx",
+          previewImage: "/preview-sendika-yonetim.png",
+        },
+        {
+          name: "Letter to Stars (Yıldızlara Mektup)",
+          status: "Active development • Live",
+          description:
+            "AI-powered personal English learning diary app. Users write daily entries in English, rewrite them at a chosen IELTS level (6/7/8/9) using Gemini AI, learn new vocabulary with Turkish meanings, and build a personal star map over time — one star per day. Automatically deployed on every Git commit.",
+          liveUrl: "https://lettertostars.mustafaerhanportakal.com",
+          githubUrl: "https://github.com/MustafaEP/letter-to-stars",
+          tech: "React (Vite) • TypeScript • Tailwind CSS • NestJS • FastAPI • Gemini API • Docker Compose • Nginx",
+          previewImage: "/preview-letter-to-stars.png",
         },
         {
           name: "MoodWeave",
@@ -518,7 +561,9 @@ I value clean code, well-designed architecture, and understanding production beh
           category: "Frontend Development",
           skills: [
             "React & TypeScript",
+            "Vite",
             "Tailwind CSS",
+            "Material UI",
             "Responsive Design",
             "State Management",
           ],
@@ -527,27 +572,45 @@ I value clean code, well-designed architecture, and understanding production beh
           category: "Backend Development",
           skills: [
             "Node.js & Express",
+            "NestJS",
+            "FastAPI (Python)",
+            "Django",
             "ASP.NET Core",
             "RESTful API Design",
-            "Authentication (JWT, OAuth2)",
+            "JWT & OAuth2",
+            "Microservice Architecture",
           ],
         },
         {
-          category: "Databases & Storage",
+          category: "Databases & ORM",
           skills: [
-            "MongoDB",
             "PostgreSQL",
+            "MongoDB",
             "MS SQL Server",
+            "Prisma",
             "Entity Framework",
+            "SQLite",
           ],
         },
         {
-          category: "DevOps & Tools",
+          category: "DevOps & Infrastructure",
           skills: [
-            "Git & GitHub",
-            "Docker",
-            "CI/CD Basics",
+            "Docker & Docker Compose",
+            "Nginx",
+            "GitHub Actions (CI/CD)",
+            "Linux (VPS)",
+            "Let's Encrypt / HTTPS",
             "Kubernetes (Learning)",
+          ],
+        },
+        {
+          category: "AI & Integrations",
+          skills: [
+            "Gemini API",
+            "Spotify API",
+            "Hugging Face Transformers",
+            "Prompt Engineering",
+            "Structured AI Output (JSON)",
           ],
         },
       ],

@@ -15,6 +15,7 @@ interface ProjectsProps {
       liveUrl: string;
       githubUrl: string;
       tech: string;
+      previewImage?: string;
     }>;
     featured: Array<{
       name: string;

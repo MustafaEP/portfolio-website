@@ -1,3 +1,5 @@
+import { useGitHubStats } from "../../../hooks";
+
 interface TechnicalFootprintProps {
   translations: {
     title: string;
@@ -7,7 +9,22 @@ interface TechnicalFootprintProps {
   };
 }
 
+const StatValue = ({ value, loading }: { value: number | null; loading: boolean }) => {
+  if (loading) {
+    return (
+      <span className="inline-block w-8 h-4 bg-neutral-200 dark:bg-neutral-700 rounded animate-pulse" />
+    );
+  }
+  return (
+    <span className="font-medium text-neutral-700 dark:text-neutral-300 transition-colors">
+      {value !== null ? value : "—"}
+    </span>
+  );
+};
+
 export const TechnicalFootprint = ({ translations }: TechnicalFootprintProps) => {
+  const { publicRepos, followers, loading } = useGitHubStats("MustafaEP");
+
   return (
     <section
       id="github"
@@ -80,16 +97,20 @@ export const TechnicalFootprint = ({ translations }: TechnicalFootprintProps) =>
                 <span className="text-neutral-600 dark:text-neutral-400 transition-colors">
                   Public Repositories
                 </span>
-                <span className="font-medium text-neutral-700 dark:text-neutral-300 transition-colors">
-                  20+
+                <StatValue value={publicRepos} loading={loading} />
+              </div>
+              <div className="flex items-center justify-between text-sm">
+                <span className="text-neutral-600 dark:text-neutral-400 transition-colors">
+                  Followers
                 </span>
+                <StatValue value={followers} loading={loading} />
               </div>
               <div className="flex items-center justify-between text-sm">
                 <span className="text-neutral-600 dark:text-neutral-400 transition-colors">
                   Active Projects
                 </span>
                 <span className="font-medium text-neutral-700 dark:text-neutral-300 transition-colors">
-                  2
+                  3
                 </span>
               </div>
               <div className="flex items-center justify-between text-sm">
