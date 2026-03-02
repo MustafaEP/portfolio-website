@@ -84,6 +84,7 @@ type Translations = {
         name: string;
         link: string;
       }[];
+      githubRepo?: string;
     };
   };
   contact: {
