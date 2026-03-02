@@ -171,7 +171,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           previewImage: "/preview-sendika-yonetim.png",
         },
         {
-          name: "Yıldızlara Mektup (Letter to Stars)",
+          name: "Letter to Stars",
           status: "Aktif geliştirme • Canlıda",
           description:
             "AI destekli kişisel İngilizce öğrenme ve günlük uygulaması. Kullanıcılar günlüklerini İngilizce yazar, yazılarını seçtikleri IELTS seviyesine (6/7/8/9) göre Gemini AI ile yeniden yazar, yeni kelimeleri öğrenir ve zamanla bir yıldız haritası oluşturur. Her gün = 1 yıldız. Django ile admin paneli & analitik, React Native ile mobil uygulama geliştirme sürecinde.",
@@ -474,7 +474,7 @@ I value clean code, well-designed architecture, and understanding production beh
           previewImage: "/preview-sendika-yonetim.png",
         },
         {
-          name: "Letter to Stars (Yıldızlara Mektup)",
+          name: "Letter to Stars",
           status: "Active development • Live",
           description:
             "AI-powered personal English learning diary app. Users write daily entries in English, rewrite them at a chosen IELTS level (6/7/8/9) using Gemini AI, learn new vocabulary with Turkish meanings, and build a personal star map over time — one star per day. Django admin panel & analytics and React Native mobile app are in active development.",
