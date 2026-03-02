@@ -1,1 +1,0 @@
-export { TechnicalFootprint } from "./TechnicalFootprint";
