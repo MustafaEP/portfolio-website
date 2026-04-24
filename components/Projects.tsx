@@ -10,9 +10,9 @@ const GitHubIcon = () => (
   </svg>
 );
 
-const ExternalLinkIcon = () => (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+const ArrowIcon = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M7 17L17 7M7 7h10v10" />
   </svg>
 );
 
@@ -30,76 +30,72 @@ export function Projects() {
         )}
       </div>
 
-      <div className="projects-grid">
+      <div className="projects-rows">
         {active.slice(0, 3).map((project, index) => (
           <article
-            className="project-card reveal"
+            className="project-row reveal"
             key={index}
             style={{ transitionDelay: `${0.1 + index * 0.1}s` }}
           >
-            {/* Image / Header */}
-            <div className="project-card-image">
+            <div className="project-row-media">
               {project.previewImage ? (
                 <Image
                   src={project.previewImage}
                   alt={project.name}
                   fill
-                  sizes="(min-width: 1024px) 33vw, 100vw"
-                  className="object-cover project-img"
+                  sizes="(min-width: 960px) 50vw, 100vw"
+                  className="object-cover project-row-img"
                   priority={index === 0}
                 />
               ) : (
-                <div className="project-img-placeholder" />
+                <div className="project-row-img-placeholder" />
               )}
-              <div className="project-overlay" />
-
-              {/* Status badge on image */}
-              <span className="project-status-badge">
-                <span className="project-status-dot" />
-                {project.status}
-              </span>
             </div>
 
-            {/* Body */}
-            <div className="project-card-body">
-              <h3 className="project-card-title">{project.name}</h3>
-              <p className="project-card-desc">{project.description}</p>
-
-              <div className="project-tags">
-                {project.tech.split('•').map((tag) => (
-                  <span className="project-tag" key={tag.trim()}>
-                    {tag.trim()}
-                  </span>
-                ))}
+            <div className="project-row-content">
+              <div className="project-row-meta">
+                <span className="project-row-index">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <span className="project-row-status">
+                  <span className="project-status-dot" />
+                  {project.status}
+                </span>
               </div>
-            </div>
 
-            {/* Footer links */}
-            <div className="project-card-footer">
-              {project.githubUrl && (
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn project-btn-github"
-                  aria-label={`${project.name} GitHub`}
-                >
-                  <GitHubIcon />
-                  GitHub
-                </a>
-              )}
-              {project.liveUrl && (
-                <a
-                  href={project.liveUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project-btn project-btn-live"
-                  aria-label={`${project.name} ${lang === 'tr' ? 'Canlı Site' : 'Live Site'}`}
-                >
-                  {lang === 'tr' ? 'Canlı Site' : 'Live Site'}
-                  <ExternalLinkIcon />
-                </a>
-              )}
+              <h3 className="project-row-title">{project.name}</h3>
+              <p className="project-row-desc">{project.description}</p>
+
+              <ul className="project-row-tech">
+                {project.tech.split('•').map((tag) => (
+                  <li key={tag.trim()}>{tag.trim()}</li>
+                ))}
+              </ul>
+
+              <div className="project-row-actions">
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-row-link project-row-link--primary"
+                  >
+                    {lang === 'tr' ? 'Canlı Site' : 'Live Site'}
+                    <ArrowIcon />
+                  </a>
+                )}
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project-row-link"
+                  >
+                    <GitHubIcon />
+                    GitHub
+                  </a>
+                )}
+              </div>
             </div>
           </article>
         ))}
