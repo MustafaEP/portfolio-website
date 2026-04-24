@@ -161,6 +161,16 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
         "Canlıda olan ve sürekli iyileştirdiğim projeler. Gerçek kullanım verisi ve geri bildirimle iteratif olarak gelişiyorlar.",
       active: [
         {
+          name: "Moodify-AI",
+          status: "Bitirme projesi • Canlıda",
+          description:
+            "Bitirme projem: Kullanıcının ruh halini Gemini AI ile analiz edip Spotify üzerinden kişiselleştirilmiş müzik önerileri sunan full-stack platform. Spotify OAuth akışı, RESTful API mimarisi ve gerçek zamanlı duygu analizi pipeline'ı ile iki büyük API'yi (Spotify + Gemini AI) tek bir akışta entegre ediyor.",
+          liveUrl: "https://moodify-ai.mustafaerhanportakal.com/login",
+          githubUrl: "https://github.com/MustafaEP/Moodify-AI",
+          tech: "React • Node.js • Express • MongoDB • Spotify API • Gemini AI • OAuth",
+          previewImage: "/preview-moodify-ai-1.png",
+        },
+        {
           name: "Sendika Yönetim Paneli",
           status: "Aktif geliştirme • Beta aşaması",
           description:
@@ -463,6 +473,16 @@ I value clean code, well-designed architecture, and understanding production beh
       activeSubtitle:
         "Live projects I continuously improve based on real-world usage and feedback.",
       active: [
+        {
+          name: "Moodify-AI",
+          status: "Graduation project • Live",
+          description:
+            "My graduation project: a full-stack platform that analyzes the user's mood with Gemini AI and delivers personalized Spotify music recommendations. Integrates two major APIs (Spotify + Gemini AI) in a single flow with Spotify OAuth, a RESTful API architecture, and a real-time emotion analysis pipeline.",
+          liveUrl: "https://moodify-ai.mustafaerhanportakal.com/login",
+          githubUrl: "https://github.com/MustafaEP/Moodify-AI",
+          tech: "React • Node.js • Express • MongoDB • Spotify API • Gemini AI • OAuth",
+          previewImage: "/preview-moodify-ai-1.png",
+        },
         {
           name: "Union Management Panel",
           status: "Active development • Beta stage",

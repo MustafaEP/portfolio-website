@@ -31,7 +31,7 @@ export function Projects() {
       </div>
 
       <div className="projects-rows">
-        {active.slice(0, 3).map((project, index) => (
+        {active.slice(0, 4).map((project, index) => (
           <article
             className="project-row reveal"
             key={index}
