@@ -166,7 +166,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           description:
             "Bitirme projem: Kullanıcının ruh halini Gemini AI ile analiz edip Spotify üzerinden kişiselleştirilmiş müzik önerileri sunan full-stack platform. Spotify OAuth akışı, RESTful API mimarisi ve gerçek zamanlı duygu analizi pipeline'ı ile iki büyük API'yi (Spotify + Gemini AI) tek bir akışta entegre ediyor.",
           liveUrl: "https://moodify-ai.mustafaerhanportakal.com/login",
-          githubUrl: "https://github.com/MustafaEP/Moodify-AI",
+          githubUrl: "https://github.com/mustafaep/Moodify-AI",
           tech: "React • Node.js • Express • MongoDB • Spotify API • Gemini AI • OAuth",
           previewImage: "/preview-moodify-ai-1.png",
         },
@@ -176,7 +176,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           description:
             "16 modülden oluşan kurumsal sendika yönetim platformu. Üye kaydı ve onay akışları, hiyerarşik RBAC (ADMIN → İL/İLÇE → ÜYE), ödemeler ve tevkifat-muhasebe, Puppeteer ile PDF üretimi, doküman şablonları, AWS SES e-posta & NetGSM SMS bildirimleri, socket.io ile anlık bildirimler, içerik yönetimi (haber/duyuru/etkinlik) ve audit log. BullMQ ile arka plan kuyruğu, Recharts ile raporlama.",
           liveUrl: "https://yonetim.mustafaerhanportakal.com",
-          githubUrl: "https://github.com/MustafaEP/yonetim-paneli",
+          githubUrl: "https://github.com/mustafaep/yonetim-paneli",
           tech: "NestJS 11 • Prisma 6 • PostgreSQL • Redis • BullMQ • React 19 • MUI 7 • TanStack Query • socket.io • Docker",
           previewImage: "/preview-sendika-yonetim.png",
         },
@@ -186,7 +186,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           description:
             "AI destekli kişisel İngilizce öğrenme ve günlük uygulaması. Kullanıcılar günlüklerini İngilizce yazar, yazılarını seçtikleri IELTS seviyesine (6/7/8/9) göre Gemini AI ile yeniden yazar, yeni kelimeleri öğrenir ve zamanla bir yıldız haritası oluşturur. Her gün = 1 yıldız. Django ile admin paneli & analitik, React Native ile mobil uygulama geliştirme sürecinde.",
           liveUrl: "https://lettertostars.mustafaerhanportakal.com",
-          githubUrl: "https://github.com/MustafaEP/letter-to-stars",
+          githubUrl: "https://github.com/mustafaep/letter-to-stars",
           tech: "React (Vite) • TypeScript • Tailwind CSS • NestJS • FastAPI • Gemini API • Django • React Native • Docker Compose • Nginx",
           previewImage: "/preview-letter-to-stars.png",
         },
@@ -196,7 +196,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           description:
             "Kullanıcının yazdığı metinden ruh halini analiz edip Spotify üzerinden müzik öneren production-grade web uygulaması. NestJS API Gateway + Django Core + FastAPI AI servisleri ile çoklu servis mimarisi; tek VPS üzerinde Docker/Nginx, HTTPS, rate limiting, logging, healthcheck ve GitHub Actions ile CI/CD.",
           liveUrl: "https://moodweave.mustafaerhanportakal.com",
-          githubUrl: "https://github.com/MustafaEP/moodweave",
+          githubUrl: "https://github.com/mustafaep/moodweave",
           tech: "React (Vite) • NestJS (Gateway) • Django (Core) • FastAPI (AI) • Docker Compose • Nginx • GitHub Actions • Let's Encrypt",
           previewImage: "/preview-moodweave.png",
         },
@@ -218,7 +218,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
             "Spotify kimlik doğrulaması için OAuth akışı uyguladım",
             "Gemini AI kullanarak duygu analizi pipeline'ı oluşturdum",
           ],
-          link: "https://github.com/MustafaEP/Moodify-AI",
+          link: "https://github.com/mustafaep/Moodify-AI",
         },
         {
           name: "AI Emotion Project",
@@ -236,7 +236,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
             "Cross-platform için React ve React Native geliştirdim",
             "Kullanıcı analiz geçmişi için backend API tasarladım",
           ],
-          link: "https://github.com/MustafaEP/AiEmotionProject",
+          link: "https://github.com/mustafaep/AiEmotionProject",
         },
       ],
       other: [
@@ -245,7 +245,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           role: "Backend Developer",
           tagline: "Temiz mimari ile takım ve maç yönetimi API'si",
           technologies: "ASP.NET Core, Entity Framework, MS SQL",
-          link: "https://github.com/MustafaEP/SoccerApp",
+          link: "https://github.com/mustafaep/SoccerApp",
         },
         {
           name: "TÜBİTAK Rover - Anti-Skid System",
@@ -260,7 +260,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           role: "Full-Stack Developer",
           tagline: "IBM Full Stack Software Developer Professional Certificate capstone project repository",
           technologies: "Python, JavaScript, React, Node.js, Flask, HTML, CSS, Git",
-          link: "https://github.com/MustafaEP/IBM-Full-Stack-Software-Engineering",
+          link: "https://github.com/mustafaep/IBM-Full-Stack-Software-Engineering",
         },
       ],
     },
@@ -479,7 +479,7 @@ I value clean code, well-designed architecture, and understanding production beh
           description:
             "My graduation project: a full-stack platform that analyzes the user's mood with Gemini AI and delivers personalized Spotify music recommendations. Integrates two major APIs (Spotify + Gemini AI) in a single flow with Spotify OAuth, a RESTful API architecture, and a real-time emotion analysis pipeline.",
           liveUrl: "https://moodify-ai.mustafaerhanportakal.com/login",
-          githubUrl: "https://github.com/MustafaEP/Moodify-AI",
+          githubUrl: "https://github.com/mustafaep/Moodify-AI",
           tech: "React • Node.js • Express • MongoDB • Spotify API • Gemini AI • OAuth",
           previewImage: "/preview-moodify-ai-1.png",
         },
@@ -489,7 +489,7 @@ I value clean code, well-designed architecture, and understanding production beh
           description:
             "Enterprise union management platform with 16 backend modules. Features member enrollment & approval workflows, hierarchical RBAC (ADMIN → regional → member roles), payments & accounting (payroll deductions), PDF generation via Puppeteer, document templates, email (AWS SES) & SMS (NetGSM) notifications, real-time alerts via socket.io, content management (news/announcements/events), reporting with Recharts, and audit logs. Background job queue via BullMQ.",
           liveUrl: "https://yonetim.mustafaerhanportakal.com",
-          githubUrl: "https://github.com/MustafaEP/yonetim-paneli",
+          githubUrl: "https://github.com/mustafaep/yonetim-paneli",
           tech: "NestJS 11 • Prisma 6 • PostgreSQL • Redis • BullMQ • React 19 • MUI 7 • TanStack Query • socket.io • Docker",
           previewImage: "/preview-sendika-yonetim.png",
         },
@@ -499,7 +499,7 @@ I value clean code, well-designed architecture, and understanding production beh
           description:
             "AI-powered personal English learning diary app. Users write daily entries in English, rewrite them at a chosen IELTS level (6/7/8/9) using Gemini AI, learn new vocabulary with Turkish meanings, and build a personal star map over time — one star per day. Django admin panel & analytics and React Native mobile app are in active development.",
           liveUrl: "https://lettertostars.mustafaerhanportakal.com",
-          githubUrl: "https://github.com/MustafaEP/letter-to-stars",
+          githubUrl: "https://github.com/mustafaep/letter-to-stars",
           tech: "React (Vite) • TypeScript • Tailwind CSS • NestJS • FastAPI • Gemini API • Django • React Native • Docker Compose • Nginx",
           previewImage: "/preview-letter-to-stars.png",
         },
@@ -509,7 +509,7 @@ I value clean code, well-designed architecture, and understanding production beh
           description:
             "Production-grade web app that analyzes mood from user text and recommends music via Spotify. Multi-service architecture with NestJS API Gateway + Django Core + FastAPI AI; deployed on a single VPS with Docker/Nginx, HTTPS, rate limiting, logging, healthchecks, and GitHub Actions CI/CD.",
           liveUrl: "https://moodweave.mustafaerhanportakal.com",
-          githubUrl: "https://github.com/MustafaEP/moodweave",
+          githubUrl: "https://github.com/mustafaep/moodweave",
           tech: "React (Vite) • NestJS (Gateway) • Django (Core) • FastAPI (AI) • Docker Compose • Nginx • GitHub Actions • Let's Encrypt",
           previewImage: "/preview-moodweave.png",
         },
@@ -531,7 +531,7 @@ I value clean code, well-designed architecture, and understanding production beh
             "Implemented OAuth flow for Spotify authentication",
             "Built sentiment analysis pipeline using Gemini AI",
           ],
-          link: "https://github.com/MustafaEP/Moodify-AI",
+          link: "https://github.com/mustafaep/Moodify-AI",
         },
         {
           name: "AI Emotion Project",
@@ -549,7 +549,7 @@ I value clean code, well-designed architecture, and understanding production beh
             "Developed React and React Native for cross-platform support",
             "Designed backend API for user analysis history",
           ],
-          link: "https://github.com/MustafaEP/AiEmotionProject",
+          link: "https://github.com/mustafaep/AiEmotionProject",
         },
       ],
       other: [
@@ -558,7 +558,7 @@ I value clean code, well-designed architecture, and understanding production beh
           role: "Backend Developer",
           tagline: "Team and match management API with clean architecture",
           technologies: "ASP.NET Core, Entity Framework, MS SQL",
-          link: "https://github.com/MustafaEP/SoccerApp",
+          link: "https://github.com/mustafaep/SoccerApp",
         },
         {
           name: "TUBITAK Rover - Anti-Skid System",
@@ -573,7 +573,7 @@ I value clean code, well-designed architecture, and understanding production beh
           role: "Full-Stack Developer",
           tagline: "Capstone project repository for IBM Full Stack Software Developer Professional Certificate",
           technologies: "Python, JavaScript, React, Node.js, Flask, HTML, CSS, Git",
-          link: "https://github.com/MustafaEP/IBM-Full-Stack-Software-Engineering",
+          link: "https://github.com/mustafaep/IBM-Full-Stack-Software-Engineering",
         },
       ],
     },

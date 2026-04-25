@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="footer-links">
-        <a href="https://github.com/MustafaEP" target="_blank" rel="noreferrer">
+        <a href="https://github.com/mustafaep" target="_blank" rel="noreferrer">
           GitHub
         </a>
         <a href="https://linkedin.com/in/mustafa-erhan-portakal-2142101ba" target="_blank" rel="noreferrer">

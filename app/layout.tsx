@@ -43,7 +43,7 @@ const structuredData = {
     addressCountry: 'TR',
   },
   sameAs: [
-    'https://github.com/MustafaEP',
+    'https://github.com/mustafaep',
     'https://linkedin.com/in/mustafa-erhan-portakal-2142101ba',
     'https://mustafaerhanportakal.com',
   ],
@@ -76,21 +76,21 @@ const structuredData = {
       name: 'Letter to Stars',
       description:
         'AI-powered English learning diary. Entries rewritten to IELTS levels 6–9 with vocabulary extraction and Turkish translations. Microservice architecture with NestJS, FastAPI, Django, React Native.',
-      url: 'https://github.com/MustafaEP/letter-to-stars',
+      url: 'https://github.com/mustafaep/letter-to-stars',
     },
     {
       '@type': 'CreativeWork',
       name: 'Organization Management Panel',
       description:
         'Full-stack management system with 17+ modules: members, payments, accounting, documents, approvals, notifications, RBAC. Real-time Socket.IO, PDF generation, Excel exports.',
-      url: 'https://github.com/MustafaEP/yonetim-paneli',
+      url: 'https://github.com/mustafaep/yonetim-paneli',
     },
     {
       '@type': 'CreativeWork',
       name: 'Moodify-AI',
       description:
         'Sentiment-analysis music recommendation platform with Spotify and Gemini AI integration. Handles 50+ concurrent users.',
-      url: 'https://github.com/MustafaEP/Moodify-AI',
+      url: 'https://github.com/mustafaep/Moodify-AI',
     },
   ],
 };
@@ -133,7 +133,7 @@ export const metadata: Metadata = {
     description:
       '3+ production apps. Node.js, NestJS, FastAPI, Django, React. Docker, CI/CD, VPS. Open to opportunities.',
     images: ['https://mustafaerhanportakal.com/og-image.jpg'],
-    creator: '@MustafaEP',
+    creator: '@mustafaep',
   },
 };
 

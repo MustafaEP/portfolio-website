@@ -80,13 +80,13 @@ export function Contact() {
             </a>
             <a
               className="contact-link-item"
-              href="https://github.com/MustafaEP"
+              href="https://github.com/mustafaep"
               target="_blank"
               rel="noreferrer"
             >
               <div className="contact-link-icon">🐙</div>
               <div>
-                <div className="contact-link-text">github.com/MustafaEP</div>
+                <div className="contact-link-text">github.com/mustafaep</div>
                 <div className="contact-link-label">GitHub</div>
               </div>
             </a>
