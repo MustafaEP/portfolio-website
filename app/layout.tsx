@@ -30,16 +30,16 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Mustafa Erhan Portakal',
-  jobTitle: 'Full-Stack Developer',
+  jobTitle: 'Backend-Focused Software Developer',
   description:
-    'Full-Stack Developer with 3+ production applications. Scalable systems with React, Node.js, TypeScript, Python, ASP.NET Core. Microservice architectures with NestJS, FastAPI, Django. Self-managed VPS deployments with Docker, CI/CD, nginx.',
+    'Backend-focused junior developer building real-world applications with NestJS, FastAPI, and Django. Three personal projects deployed to production on a self-managed VPS, including an AI-powered English learning platform with a microservice architecture. Comfortable integrating LLMs into backend services.',
   url: 'https://mustafaerhanportakal.com/',
   image: 'https://mustafaerhanportakal.com/og-image.jpg',
   email: 'portakalm11@gmail.com',
   telephone: '+905074131160',
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Istanbul',
+    addressLocality: 'Bursa',
     addressCountry: 'TR',
   },
   sameAs: [
@@ -63,12 +63,14 @@ const structuredData = {
     dateCreated: '2026-01',
   },
   knowsAbout: [
-    'Node.js', 'NestJS', 'FastAPI', 'Django', 'ASP.NET Core',
-    'React', 'React Native', 'TypeScript', 'Tailwind CSS',
-    'PostgreSQL', 'MongoDB', 'Redis', 'Prisma ORM',
-    'Docker', 'Docker Compose', 'GitHub Actions', 'nginx',
-    'Linux VPS', 'Microservices', 'REST APIs', 'JWT', 'OAuth2',
-    'Gemini AI', 'Spotify API', 'Socket.IO', 'AWS SES',
+    'NestJS', 'FastAPI', 'Django', 'REST APIs', 'JWT Authentication',
+    'TypeScript', 'JavaScript', 'Python',
+    'PostgreSQL', 'Prisma ORM', 'SQL', 'MongoDB',
+    'React', 'React Native',
+    'Gemini API', 'Prompt Engineering', 'Structured JSON Outputs', 'LLM Integration',
+    'Git', 'Docker', 'Linux VPS', 'AI-assisted Development',
+    'Microservices', 'Node.js', 'Express', 'ASP.NET Core',
+    'Spotify API', 'Socket.IO', 'AWS SES', 'Puppeteer',
   ],
   workExample: [
     {
@@ -89,18 +91,18 @@ const structuredData = {
       '@type': 'CreativeWork',
       name: 'Moodify-AI',
       description:
-        'Sentiment-analysis music recommendation platform with Spotify and Gemini AI integration. Handles 50+ concurrent users.',
+        'Capstone: sentiment-analysis-driven music recommendation platform. Maps Gemini-based mood analysis to Spotify track features via the Spotify Web API.',
       url: 'https://github.com/mustafaep/Moodify-AI',
     },
   ],
 };
 
 export const metadata: Metadata = {
-  title: 'Mustafa Erhan Portakal | Full-Stack Developer — Node.js, TypeScript, NestJS, FastAPI',
+  title: 'Mustafa Erhan Portakal | Backend-Focused Software Developer — NestJS, FastAPI, Django',
   description:
-    'Full-Stack Developer with 3+ production apps. React, Node.js, TypeScript, NestJS, FastAPI, Django, ASP.NET Core. Microservice architectures, Docker, CI/CD, VPS deployments. AI-powered products.',
+    'Backend-focused junior developer. Three personal projects in production on a self-managed VPS, including an AI-powered English learning platform with a microservice architecture (NestJS + FastAPI + Django). Comfortable integrating LLMs into backend services.',
   keywords:
-    'Mustafa Erhan Portakal, Full-Stack Developer, Backend Developer, Node.js, NestJS, TypeScript, React, React Native, FastAPI, Django, ASP.NET Core, PostgreSQL, MongoDB, Redis, Docker, Microservices, AI Integration, Gemini AI, Istanbul Turkey, Available for Hire',
+    'Mustafa Erhan Portakal, Backend Developer, Junior Backend Developer, NestJS, FastAPI, Django, TypeScript, Python, JavaScript, PostgreSQL, Prisma, REST API, JWT, Microservices, Docker, Linux VPS, Gemini API, LLM Integration, Prompt Engineering, React, Bursa Turkey, Available for Hire',
   authors: [{ name: 'Mustafa Erhan Portakal', url: 'https://mustafaerhanportakal.com' }],
   robots: 'index, follow, max-image-preview:large, max-snippet:-1',
   alternates: {
@@ -114,24 +116,24 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://mustafaerhanportakal.com/',
     siteName: 'Mustafa Erhan Portakal',
-    title: 'Mustafa Erhan Portakal — Full-Stack Developer',
+    title: 'Mustafa Erhan Portakal — Backend-Focused Software Developer',
     description:
-      '3+ production apps. React, Node.js, NestJS, FastAPI, Django, Docker. AI-powered products. Open to opportunities.',
+      'Junior backend developer. NestJS, FastAPI, Django. Three personal projects in production on a self-managed VPS. LLM integration with Gemini.',
     images: [
       {
         url: 'https://mustafaerhanportakal.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mustafa Erhan Portakal - Full-Stack Developer Portfolio',
+        alt: 'Mustafa Erhan Portakal - Backend-Focused Software Developer Portfolio',
       },
     ],
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mustafa Erhan Portakal — Full-Stack Developer',
+    title: 'Mustafa Erhan Portakal — Backend-Focused Software Developer',
     description:
-      '3+ production apps. Node.js, NestJS, FastAPI, Django, React. Docker, CI/CD, VPS. Open to opportunities.',
+      'Junior backend developer. NestJS, FastAPI, Django. 3 production apps on a self-managed VPS. LLM integration with Gemini. Open to junior backend roles.',
     images: ['https://mustafaerhanportakal.com/og-image.jpg'],
     creator: '@mustafaep',
   },

@@ -3,43 +3,58 @@
 import React from 'react';
 import {
   SiTypescript,
-  SiReact,
-  SiNextdotjs,
+  SiJavascript,
+  SiPython,
   SiNestjs,
   SiFastapi,
   SiDjango,
-  SiPostgresql,
-  SiDocker,
   SiNodedotjs,
-  SiPython,
-  SiRedis,
-  SiMongodb,
+  SiExpress,
+  SiReact,
+  SiNextdotjs,
   SiTailwindcss,
+  SiMui,
+  SiPostgresql,
   SiPrisma,
-  SiGithubactions,
+  SiMongodb,
+  SiDocker,
   SiNginx,
+  SiLinux,
+  SiGit,
+  SiSocketdotio,
+  SiGooglegemini,
 } from 'react-icons/si';
 import { useLang } from './LangProvider';
 
 const TECH_STACK = [
+  // Languages
   { icon: SiTypescript,    name: 'TypeScript',     color: '#3178C6' },
-  { icon: SiNodedotjs,     name: 'Node.js',        color: '#339933' },
-  { icon: SiReact,         name: 'React',          color: '#61DAFB' },
-  { icon: SiNextdotjs,     name: 'Next.js',        color: '#ffffff' },
+  { icon: SiJavascript,    name: 'JavaScript',     color: '#F7DF1E' },
+  { icon: SiPython,        name: 'Python',         color: '#3776AB' },
+  // Backend (primary)
   { icon: SiNestjs,        name: 'NestJS',         color: '#E0234E' },
   { icon: SiFastapi,       name: 'FastAPI',        color: '#009688' },
   { icon: SiDjango,        name: 'Django',         color: '#092E20' },
-  { icon: SiPython,        name: 'Python',         color: '#3776AB' },
+  { icon: SiNodedotjs,     name: 'Node.js',        color: '#339933' },
+  { icon: SiExpress,       name: 'Express',        color: '#ffffff' },
+  // Frontend
+  { icon: SiReact,         name: 'React',          color: '#61DAFB' },
+  { icon: SiReact,         name: 'React Native',   color: '#61DAFB' },
+  { icon: SiNextdotjs,     name: 'Next.js',        color: '#ffffff' },
+  { icon: SiTailwindcss,   name: 'Tailwind CSS',   color: '#06B6D4' },
+  { icon: SiMui,           name: 'Material-UI',    color: '#007FFF' },
+  // Databases & ORM
   { icon: SiPostgresql,    name: 'PostgreSQL',     color: '#4169E1' },
-  { icon: SiMongodb,       name: 'MongoDB',        color: '#47A248' },
-  { icon: SiRedis,         name: 'Redis',          color: '#FF4438' },
   { icon: SiPrisma,        name: 'Prisma',         color: '#5A67D8' },
+  { icon: SiMongodb,       name: 'MongoDB',        color: '#47A248' },
+  // AI
+  { icon: SiGooglegemini,  name: 'Gemini API',     color: '#8E75B2' },
+  // Tools & Infra
+  { icon: SiGit,           name: 'Git',            color: '#F05032' },
   { icon: SiDocker,        name: 'Docker',         color: '#2496ED' },
   { icon: SiNginx,         name: 'Nginx',          color: '#009639' },
-  { icon: SiGithubactions, name: 'GitHub Actions', color: '#2088FF' },
-  { icon: SiTailwindcss,   name: 'Tailwind CSS',   color: '#06B6D4' },
-  { icon: SiReact,         name: 'React Native',   color: '#61DAFB' },
-
+  { icon: SiLinux,         name: 'Linux VPS',      color: '#FCC624' },
+  { icon: SiSocketdotio,   name: 'Socket.IO',      color: '#ffffff' },
 ];
 
 export function Experience() {

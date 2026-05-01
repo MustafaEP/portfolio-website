@@ -113,20 +113,20 @@ export const translations: Record<Lang, Translations> = {
     },
     hero: {
       title: "Mustafa Erhan Portakal",
-      role: "Backend Odaklı Full-Stack Engineer",
+      role: "Backend Odaklı Yazılım Geliştirici",
       subtitle:
-        "Backend odaklı full-stack çözümler geliştiriyorum (React, Node.js, ASP.NET Core). API tasarımı, sistem entegrasyonu ve üretime hazır uygulamalar konusunda deneyimliyim.",
-      badge: "İş fırsatlarına açık",
+        "NestJS, FastAPI ve Django ile gerçek dünya uygulamaları geliştiren backend odaklı junior bir geliştiriciyim. Üçü kendi VPS'imde production'da çalışan kişisel projelerim var; LLM entegrasyonları konusunda rahatım.",
+      badge: "Junior backend rolüne açık",
       ctaPrimary: "Projelerime göz at",
       ctaSecondary: "CV'mi indir",
     },
     about: {
       title: "Hakkımda",
-      text: `Backend ağırlıklı çalışan bir yazılım geliştiricisiyim. Ölçeklenebilir sistemler, modern backend mimarileri ve AI entegrasyonlu ürünler geliştirmeye odaklanıyorum.
+      text: `Backend odaklı junior bir yazılım geliştiricisiyim. NestJS, FastAPI ve Django ile gerçek dünya uygulamaları geliştiriyor; LLM'leri backend servislerine entegre etmeyi seviyorum.
 
-Staj sürecimde ASP.NET Core ile RESTful API’ler geliştirerek backend temellerimi sağlamlaştırdım. Günümüzde ağırlıklı olarak Node.js, TypeScript, Django ve FastAPI ile çalışıyor; üretim ortamında çalışan, sürdürülebilir sistemler tasarlıyorum.
+Üç kişisel projem (mikroservis mimarili AI destekli İngilizce öğrenme platformu dahil) kendi yönettiğim Linux VPS üzerinde production'da çalışıyor. Stajlarımda ASP.NET Core ile RESTful API'ler geliştirerek backend temellerimi attım; bugün ağırlıklı olarak TypeScript, Python ve Prisma + PostgreSQL ile çalışıyorum.
 
-Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem veriyorum. Backend veya full-stack rollerinde, ölçeklenebilir SaaS ürünleri ve AI tabanlı sistemler geliştirmeyi hedefliyorum.`,
+Bursa Teknik Üniversitesi Bilgisayar Mühendisliği'nden Ağustos 2025'te mezun oldum. Şu an Next.js, daha derin SQL ve sistem tasarımı temellerini öğrenmeye odaklanıyorum; junior backend rolü arıyorum.`,
     },
     experience: {
       title: "Deneyim",
@@ -137,9 +137,9 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           period: "09/2024 – 02/2025",
           location: "Bursa, Türkiye",
           bullets: [
-            "ASP.NET Core ve Entity Framework ile birden fazla RESTful API endpoint tasarladım ve geliştirdim.",
-            "Veritabanı sorgularını optimize ederek API cevap sürelerini önemli ölçüde iyileştirdim.",
-            "Backend kod kalitesini artırmak için birim ve entegrasyon testlerine katkıda bulundum.",
+            "Küçük bir takım içinde ASP.NET Core ve Entity Framework Core kullanarak RESTful API endpoint'leri geliştirdim.",
+            "Frontend ekibiyle React entegrasyonu üzerinde çalıştım ve xUnit ile yazılan birim testlerle backend mantığına katkıda bulundum.",
+            "Kıdemli geliştiricilerle yapılan code review'lara katılarak kurumsal .NET iş akışları konusunda deneyim kazandım.",
           ],
         },
         {
@@ -148,8 +148,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
           period: "08/2022 – 09/2022",
           location: "İstanbul, Türkiye",
           bullets: [
-            "Kurumsal ortamda MVC mimarisi ile .NET uygulamaları geliştirdim.",
-            "SQL Server ile CRUD işlemleri ve iş mantığı uyguladım.",
+            "Kurumsal bir ortamda SQL Server ile CRUD işlemleri içeren .NET MVC uygulamaları geliştirdim.",
           ],
         },
       ],
@@ -161,44 +160,34 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
         "Canlıda olan ve sürekli iyileştirdiğim projeler. Gerçek kullanım verisi ve geri bildirimle iteratif olarak gelişiyorlar.",
       active: [
         {
-          name: "Moodify-AI",
-          status: "Bitirme projesi • Canlıda",
-          description:
-            "Bitirme projem: Kullanıcının ruh halini Gemini AI ile analiz edip Spotify üzerinden kişiselleştirilmiş müzik önerileri sunan full-stack platform. Spotify OAuth akışı, RESTful API mimarisi ve gerçek zamanlı duygu analizi pipeline'ı ile iki büyük API'yi (Spotify + Gemini AI) tek bir akışta entegre ediyor.",
-          liveUrl: "https://moodify-ai.mustafaerhanportakal.com/login",
-          githubUrl: "https://github.com/mustafaep/Moodify-AI",
-          tech: "React • Node.js • Express • MongoDB • Spotify API • Gemini AI • OAuth",
-          previewImage: "/preview-moodify-ai-1.png",
-        },
-        {
-          name: "Sendika Yönetim Paneli",
-          status: "Aktif geliştirme • Beta aşaması",
-          description:
-            "16 modülden oluşan kurumsal sendika yönetim platformu. Üye kaydı ve onay akışları, hiyerarşik RBAC (ADMIN → İL/İLÇE → ÜYE), ödemeler ve tevkifat-muhasebe, Puppeteer ile PDF üretimi, doküman şablonları, AWS SES e-posta & NetGSM SMS bildirimleri, socket.io ile anlık bildirimler, içerik yönetimi (haber/duyuru/etkinlik) ve audit log. BullMQ ile arka plan kuyruğu, Recharts ile raporlama.",
-          liveUrl: "https://yonetim.mustafaerhanportakal.com",
-          githubUrl: "https://github.com/mustafaep/yonetim-paneli",
-          tech: "NestJS 11 • Prisma 6 • PostgreSQL • Redis • BullMQ • React 19 • MUI 7 • TanStack Query • socket.io • Docker",
-          previewImage: "/preview-sendika-yonetim.png",
-        },
-        {
           name: "Letter to Stars",
           status: "Aktif geliştirme • Canlıda",
           description:
-            "AI destekli kişisel İngilizce öğrenme ve günlük uygulaması. Kullanıcılar günlüklerini İngilizce yazar, yazılarını seçtikleri IELTS seviyesine (6/7/8/9) göre Gemini AI ile yeniden yazar, yeni kelimeleri öğrenir ve zamanla bir yıldız haritası oluşturur. Her gün = 1 yıldız. Django ile admin paneli & analitik, React Native ile mobil uygulama geliştirme sürecinde.",
+            "AI destekli İngilizce öğrenme günlüğü: kullanıcıların yazıları seçilen IELTS seviyesine (6–9) göre Gemini AI ile yeniden yazılır, yeni kelimeler ve Türkçe çevirileri otomatik çıkarılır. Mikroservis mimarisi: NestJS API + FastAPI AI servisi + Django admin. Dockerize edilmiş ve Git webhook'ları üzerinden VPS'e otomatik deploy. React web uygulaması ile React Native (Expo) Android build'i; Gemini'den yapılandırılmış JSON çıktısını zorlamak için prompt tasarımı.",
           liveUrl: "https://lettertostars.mustafaerhanportakal.com",
           githubUrl: "https://github.com/mustafaep/letter-to-stars",
-          tech: "React (Vite) • TypeScript • Tailwind CSS • NestJS • FastAPI • Gemini API • Django • React Native • Docker Compose • Nginx",
+          tech: "NestJS • FastAPI • Django • React • React Native • PostgreSQL • Gemini AI • Docker",
           previewImage: "/preview-letter-to-stars.png",
         },
         {
-          name: "MoodWeave",
-          status: "Aktif geliştirme • MVP canlıda",
+          name: "Organization Management Panel",
+          status: "Aktif geliştirme • Canlıda",
           description:
-            "Kullanıcının yazdığı metinden ruh halini analiz edip Spotify üzerinden müzik öneren production-grade web uygulaması. NestJS API Gateway + Django Core + FastAPI AI servisleri ile çoklu servis mimarisi; tek VPS üzerinde Docker/Nginx, HTTPS, rate limiting, logging, healthcheck ve GitHub Actions ile CI/CD.",
-          liveUrl: "https://moodweave.mustafaerhanportakal.com",
-          githubUrl: "https://github.com/mustafaep/moodweave",
-          tech: "React (Vite) • NestJS (Gateway) • Django (Core) • FastAPI (AI) • Docker Compose • Nginx • GitHub Actions • Let's Encrypt",
-          previewImage: "/preview-moodweave.png",
+            "17+ modüllü (üyeler, ödemeler, muhasebe, dokümanlar, onaylar) full-stack kurumsal yönetim sistemi; rol tabanlı erişim kontrolü ile bölgesel hiyerarşi içerir. Socket.IO ile anlık bildirimler, Puppeteer ile PDF üretimi, Excel dışa aktarımı, AWS SES e-posta ve NetGSM SMS entegrasyonları.",
+          liveUrl: "https://yonetim.mustafaerhanportakal.com",
+          githubUrl: "https://github.com/mustafaep/yonetim-paneli",
+          tech: "NestJS • React • Prisma • PostgreSQL • Material-UI • Socket.IO • Docker",
+          previewImage: "/preview-sendika-yonetim.png",
+        },
+        {
+          name: "Moodify-AI",
+          status: "Bitirme projesi • Canlıda",
+          description:
+            "Bitirme projem: duygu analizine dayalı müzik öneri platformu. Gemini tabanlı ruh hali analizini Spotify Web API üzerinden track özelliklerine eşler ve kullanıcıya kişiselleştirilmiş öneriler sunar.",
+          liveUrl: "https://moodify-ai.mustafaerhanportakal.com/login",
+          githubUrl: "https://github.com/mustafaep/Moodify-AI",
+          tech: "React • Node.js • Express • MongoDB • Spotify API • Gemini AI",
+          previewImage: "/preview-moodify-ai-1.png",
         },
       ],
       featured: [
@@ -402,7 +391,7 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
     contact: {
       title: "Birlikte Çalışalım",
       text:
-        "Backend / Full-Stack rollerine açığım (Remote/Hybrid). Proje/rol, teknoloji stack’i ve takvim bilgisini paylaşırsanız 24–48 saat içinde dönüş yaparım.",
+        "Junior backend rollerine açığım (Remote/Hybrid). Rol, teknoloji stack'i ve takvim bilgisini paylaşırsanız 24–48 saat içinde dönüş yaparım.",
       cta: "E-posta gönder",
     },
     github: {
@@ -426,20 +415,20 @@ Temiz kod, iyi tasarlanmış mimari ve production davranışını anlamaya önem
     },
     hero: {
       title: "Mustafa Erhan Portakal",
-      role: "Backend-Focused Full-Stack Engineer",
+      role: "Backend-Focused Software Developer",
       subtitle:
-        "I build backend-focused full-stack solutions (React, Node.js, ASP.NET Core). Experienced in API design, system integration, and delivering production-ready applications.",
-      badge: "Open to opportunities",
+        "Backend-focused junior developer building real-world applications with NestJS, FastAPI, and Django. Three personal projects deployed to production on a self-managed VPS, comfortable integrating LLMs into backend services.",
+      badge: "Open to junior backend roles",
       ctaPrimary: "View my work",
       ctaSecondary: "Download CV",
     },
     about: {
       title: "About",
-      text: `I'm a backend-focused full-stack engineer. I focus on building scalable systems, modern backend architectures, and AI-integrated products.
+      text: `Backend-focused junior developer. I build real-world applications with NestJS, FastAPI, and Django, and I'm comfortable integrating LLMs into backend services.
 
-During my internship, I strengthened my backend foundations by developing RESTful APIs with ASP.NET Core. Today I mainly work with Node.js, TypeScript, Django, and FastAPI, designing sustainable systems that run in production.
+Three personal projects — including an AI-powered English learning platform with a microservice architecture — are deployed to production on a self-managed Linux VPS. During my internships I strengthened my backend foundations with ASP.NET Core RESTful APIs; today I mainly work with TypeScript, Python, and Prisma + PostgreSQL.
 
-I value clean code, well-designed architecture, and understanding production behavior. I'm aiming to build scalable SaaS products and AI-based systems in backend or full-stack roles.`,
+Recent Computer Engineering graduate from Bursa Technical University (Aug 2025). Currently learning Next.js, deeper SQL, and system design fundamentals while looking for a junior backend role.`,
     },
     experience: {
       title: "Experience",
@@ -450,9 +439,9 @@ I value clean code, well-designed architecture, and understanding production beh
           period: "09/2024 – 02/2025",
           location: "Bursa, Turkey",
           bullets: [
-            "Designed and implemented multiple RESTful API endpoints using ASP.NET Core and Entity Framework.",
-            "Optimized database queries and significantly improved API response times.",
-            "Contributed to unit and integration tests to increase backend code quality.",
+            "Developed RESTful API endpoints using ASP.NET Core and Entity Framework Core within a small team.",
+            "Collaborated with the frontend team on React integration and contributed to backend logic with xUnit unit tests.",
+            "Participated in code reviews with senior developers, gaining exposure to enterprise .NET workflows.",
           ],
         },
         {
@@ -461,8 +450,7 @@ I value clean code, well-designed architecture, and understanding production beh
           period: "08/2022 – 09/2022",
           location: "Istanbul, Turkey",
           bullets: [
-            "Developed .NET applications with MVC architecture in an enterprise environment.",
-            "Implemented CRUD operations and business logic with SQL Server.",
+            "Built .NET MVC applications with CRUD operations and SQL Server in an enterprise environment.",
           ],
         },
       ],
@@ -474,44 +462,34 @@ I value clean code, well-designed architecture, and understanding production beh
         "Live projects I continuously improve based on real-world usage and feedback.",
       active: [
         {
-          name: "Moodify-AI",
-          status: "Graduation project • Live",
-          description:
-            "My graduation project: a full-stack platform that analyzes the user's mood with Gemini AI and delivers personalized Spotify music recommendations. Integrates two major APIs (Spotify + Gemini AI) in a single flow with Spotify OAuth, a RESTful API architecture, and a real-time emotion analysis pipeline.",
-          liveUrl: "https://moodify-ai.mustafaerhanportakal.com/login",
-          githubUrl: "https://github.com/mustafaep/Moodify-AI",
-          tech: "React • Node.js • Express • MongoDB • Spotify API • Gemini AI • OAuth",
-          previewImage: "/preview-moodify-ai-1.png",
-        },
-        {
-          name: "Union Management Panel",
-          status: "Active development • Beta stage",
-          description:
-            "Enterprise union management platform with 16 backend modules. Features member enrollment & approval workflows, hierarchical RBAC (ADMIN → regional → member roles), payments & accounting (payroll deductions), PDF generation via Puppeteer, document templates, email (AWS SES) & SMS (NetGSM) notifications, real-time alerts via socket.io, content management (news/announcements/events), reporting with Recharts, and audit logs. Background job queue via BullMQ.",
-          liveUrl: "https://yonetim.mustafaerhanportakal.com",
-          githubUrl: "https://github.com/mustafaep/yonetim-paneli",
-          tech: "NestJS 11 • Prisma 6 • PostgreSQL • Redis • BullMQ • React 19 • MUI 7 • TanStack Query • socket.io • Docker",
-          previewImage: "/preview-sendika-yonetim.png",
-        },
-        {
           name: "Letter to Stars",
           status: "Active development • Live",
           description:
-            "AI-powered personal English learning diary app. Users write daily entries in English, rewrite them at a chosen IELTS level (6/7/8/9) using Gemini AI, learn new vocabulary with Turkish meanings, and build a personal star map over time — one star per day. Django admin panel & analytics and React Native mobile app are in active development.",
+            "AI-powered English diary: entries are rewritten into IELTS levels (6–9) with Gemini AI, and vocabulary plus Turkish translations are extracted automatically. Microservice split: NestJS API + FastAPI AI service + Django admin. Dockerized and auto-deployed to a VPS via Git webhooks. Built a React web app and a React Native (Expo) Android build; designed prompts to enforce structured JSON output from Gemini.",
           liveUrl: "https://lettertostars.mustafaerhanportakal.com",
           githubUrl: "https://github.com/mustafaep/letter-to-stars",
-          tech: "React (Vite) • TypeScript • Tailwind CSS • NestJS • FastAPI • Gemini API • Django • React Native • Docker Compose • Nginx",
+          tech: "NestJS • FastAPI • Django • React • React Native • PostgreSQL • Gemini AI • Docker",
           previewImage: "/preview-letter-to-stars.png",
         },
         {
-          name: "MoodWeave",
-          status: "Active development • Live MVP",
+          name: "Organization Management Panel",
+          status: "Active development • Live",
           description:
-            "Production-grade web app that analyzes mood from user text and recommends music via Spotify. Multi-service architecture with NestJS API Gateway + Django Core + FastAPI AI; deployed on a single VPS with Docker/Nginx, HTTPS, rate limiting, logging, healthchecks, and GitHub Actions CI/CD.",
-          liveUrl: "https://moodweave.mustafaerhanportakal.com",
-          githubUrl: "https://github.com/mustafaep/moodweave",
-          tech: "React (Vite) • NestJS (Gateway) • Django (Core) • FastAPI (AI) • Docker Compose • Nginx • GitHub Actions • Let's Encrypt",
-          previewImage: "/preview-moodweave.png",
+            "Full-stack management system with 17+ modules (members, payments, accounting, documents, approvals) and a regional hierarchy with role-based access control. Real-time notifications (Socket.IO), PDF generation (Puppeteer), Excel exports, AWS SES email, and NetGSM SMS integration.",
+          liveUrl: "https://yonetim.mustafaerhanportakal.com",
+          githubUrl: "https://github.com/mustafaep/yonetim-paneli",
+          tech: "NestJS • React • Prisma • PostgreSQL • Material-UI • Socket.IO • Docker",
+          previewImage: "/preview-sendika-yonetim.png",
+        },
+        {
+          name: "Moodify-AI",
+          status: "Capstone project • Live",
+          description:
+            "Capstone: a sentiment-analysis-driven music recommendation platform. Maps Gemini-based mood analysis to Spotify track features via the Spotify Web API and serves personalized recommendations.",
+          liveUrl: "https://moodify-ai.mustafaerhanportakal.com/login",
+          githubUrl: "https://github.com/mustafaep/Moodify-AI",
+          tech: "React • Node.js • Express • MongoDB • Spotify API • Gemini AI",
+          previewImage: "/preview-moodify-ai-1.png",
         },
       ],
       featured: [
@@ -715,7 +693,7 @@ I value clean code, well-designed architecture, and understanding production beh
     contact: {
       title: "Let's Work Together",
       text:
-        "I'm open to Backend / Full-Stack roles (Remote/Hybrid). If you share a brief note about the role, stack, and timeline, I’ll get back within 24–48 hours.",
+        "I'm open to junior backend roles (Remote/Hybrid). Share a brief note about the role, stack, and timeline and I'll get back within 24–48 hours.",
       cta: "Send email",
     },
     github: {

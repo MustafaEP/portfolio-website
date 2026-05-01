@@ -18,7 +18,7 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone",
-  "description": "Backend & Full-Stack Developer Portfolio - Mustafa Erhan Portakal. Scalable systems, Node.js, TypeScript, Django, FastAPI, AI.",
+  "description": "Mustafa Erhan Portakal — Backend-Focused Software Developer. NestJS, FastAPI, Django, TypeScript, Python. Three personal projects in production on a self-managed VPS, with LLM integration via Gemini.",
   "start_url": "/",
   "scope": "/"
 }

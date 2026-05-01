@@ -4,7 +4,7 @@ import React from 'react';
 import { useLang } from './LangProvider';
 
 export function Hero() {
-  const { lang, t } = useLang();
+  const { t } = useLang();
   const hero = t.hero;
 
   return (
@@ -25,16 +25,8 @@ export function Hero() {
             <span aria-hidden="true">→</span>
           </a>
           <a
-            href={
-              lang === 'tr'
-                ? '/Mustafa-Erhan-Portakal-CV-TR.pdf'
-                : '/Mustafa-Erhan-Portakal-CV.pdf'
-            }
-            download={
-              lang === 'tr'
-                ? 'Mustafa-Erhan-Portakal-CV-TR.pdf'
-                : 'Mustafa-Erhan-Portakal-CV.pdf'
-            }
+            href="/Mustafa-Erhan-Portakal-CV.pdf"
+            download="Mustafa-Erhan-Portakal-CV.pdf"
             className="hero-link-secondary"
           >
             {hero.ctaSecondary}

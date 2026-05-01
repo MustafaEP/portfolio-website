@@ -1,11 +1,10 @@
 # Mustafa Erhan Portakal — Portfolio
 
-Kişisel portfolio web sitesi. Backend & Full-Stack geliştirici profili, projeler, deneyim ve iletişim bilgilerini sunar.
+Kişisel portfolio web sitesi. Backend odaklı yazılım geliştirici profili, projeler, deneyim ve iletişim bilgilerini sunar.
 
 ## Teknolojiler
 
-- **React 19** + **TypeScript**
-- **Vite** — derleme ve geliştirme
+- **Next.js 15** + **React 19** + **TypeScript**
 - **Tailwind CSS** — stiller
 - **i18n** — Türkçe / İngilizce dil desteği
 

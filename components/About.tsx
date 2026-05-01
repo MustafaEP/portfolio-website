@@ -9,20 +9,20 @@ export function About() {
 
   const copy = lang === 'tr'
     ? {
-        role: 'Backend / Full-Stack Geliştirici',
-        focus: 'Ölçeklenebilir Sistemler & AI',
+        role: 'Backend Odaklı Yazılım Geliştirici',
+        focus: 'Backend Servisleri & LLM Entegrasyonu',
         degree: 'Bilgisayar Mühendisliği, Lisans',
         school: 'Bursa Teknik Üniversitesi, 2025',
-        deployment: 'Kendi VPS\'im + Netlify / Vercel',
-        learning: 'Turborepo',
+        deployment: 'Kendi yönettiğim Linux VPS',
+        learning: 'Next.js, daha derin SQL, sistem tasarımı',
       }
     : {
-        role: 'Backend / Full-Stack Developer',
-        focus: 'Scalable Systems & AI',
+        role: 'Backend-Focused Software Developer',
+        focus: 'Backend Services & LLM Integration',
         degree: 'BSc, Computer Engineering',
         school: 'Bursa Technical University, 2025',
-        deployment: 'Self-hosted VPS + Netlify / Vercel',
-        learning: 'Turborepo',
+        deployment: 'Self-managed Linux VPS',
+        learning: 'Next.js, deeper SQL, system design',
       };
 
   return (
@@ -43,7 +43,7 @@ export function About() {
           <p><span className="tk-keyword">const</span> <span className="tk-var">mustafa</span> <span className="tk-op">=</span> {'{'}</p>
           <p className="tk-indent"><span className="tk-key">role</span><span className="tk-op">:</span> <span className="tk-str">"{copy.role}"</span><span className="tk-op">,</span></p>
           <p className="tk-indent"><span className="tk-key">focus</span><span className="tk-op">:</span> <span className="tk-str">"{copy.focus}"</span><span className="tk-op">,</span></p>
-          <p className="tk-indent"><span className="tk-key">stack</span><span className="tk-op">:</span> {'['}<span className="tk-str">"Node.js"</span><span className="tk-op">,</span> <span className="tk-str">"TypeScript"</span><span className="tk-op">,</span> <span className="tk-str">"NestJS"</span><span className="tk-op">,</span> <span className="tk-str">"Next.js"</span><span className="tk-op">,</span> <span className="tk-str">"React"</span><span className="tk-op">,</span> <span className="tk-str">"Prisma"</span><span className="tk-op">,</span> <span className="tk-str">"Docker"</span>{']'}<span className="tk-op">,</span></p>
+          <p className="tk-indent"><span className="tk-key">stack</span><span className="tk-op">:</span> {'['}<span className="tk-str">"NestJS"</span><span className="tk-op">,</span> <span className="tk-str">"FastAPI"</span><span className="tk-op">,</span> <span className="tk-str">"Django"</span><span className="tk-op">,</span> <span className="tk-str">"TypeScript"</span><span className="tk-op">,</span> <span className="tk-str">"Python"</span><span className="tk-op">,</span> <span className="tk-str">"PostgreSQL"</span><span className="tk-op">,</span> <span className="tk-str">"Prisma"</span><span className="tk-op">,</span> <span className="tk-str">"Docker"</span>{']'}<span className="tk-op">,</span></p>
           <p className="tk-indent"><span className="tk-key">deployment</span><span className="tk-op">:</span> <span className="tk-str">"{copy.deployment}"</span><span className="tk-op">,</span></p>
           <p className="tk-indent"><span className="tk-key">location</span><span className="tk-op">:</span> <span className="tk-str">"Bursa, Türkiye"</span><span className="tk-op">,</span></p>
           <p className="tk-indent"><span className="tk-key">degree</span><span className="tk-op">:</span> <span className="tk-str">"{copy.degree}"</span><span className="tk-op">,</span></p>
